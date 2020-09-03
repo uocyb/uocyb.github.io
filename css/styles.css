@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 
+body {
+  background: url('../images/placeholder.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 
 
 /*---Media Queries --*/
@@ -16,6 +24,7 @@
 
 
 /*---Firefox Bug Fix --*/
+/*
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
@@ -23,7 +32,10 @@
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
+*/
 /*--- Fixed Background Image --*/
+
+/*
 figure {
   position: relative;
   width: 100%;
@@ -39,7 +51,7 @@ figure {
   height: 100%;
 }
 #fixed {
-  background-image: url('img/mac.png');
+  background-image: url('../images/placeholder.png');
   position: fixed;
   display: block;
   top: 0;
@@ -52,6 +64,8 @@ figure {
           transform: translateZ(0);
   will-change: transform;
 }
+*/
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
