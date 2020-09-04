@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- Beginning with w3schools template -->
+<!-- Beginning with w3schools template for Bootstrap/HTML5-based site -->
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -14,11 +14,19 @@
 	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-	<p>UO Cyb website in progress.<p>
+
+<div class="top-bar">
+	<div class="container">
+		<div class="col-12 text-right">
+			<p>UO Cyb website in progress.</p>
+		</div>
+	</div>
+</div>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="images/uologo.jpeg" /></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -44,7 +52,8 @@
 	</div>
 </nav>
 
-<!--- Fixed background -->
+
+<!--- Fixed background (will be on all pages of the site) -->
 <div class="container padding">
   <div class="card border-0 shadow my-5">
     <div class="card-body p-5">
@@ -66,30 +75,27 @@
 				<div class="col-12 social padding">
 					<a href="https://www.facebook.com/UO-Cybersecurity-Club-762321300797403/"><i class="fab fa-facebook"></i></a>
 					<a href="https://www.instagram.com/uocyb/"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fas fa-envelope"></i></a>
+					<a href="mailto:uocyberinfo@uoregon.edu"><i class="fas fa-envelope"></i></a>
 				</div>
-
-
 			</div>
     </div>
   </div>
 </div>
 
-<!--- Footer - may want to move social media here, add meeting times
+<!--- Footer (used for all pages on the website)
+- may want to move social media here, add meeting times
 and location, email address, (and other links?) -->
 <footer>
 	<div class="container-fluid padding">
 		<div class="row text-center">
 			<div class="col-12">
 				<p>
-					Footer text
+					&copy; UOSec 2020
 				</p>
 			</div>
 		</div>
 	</div>
 </footer>
-
-
 
 </body>
 </html>

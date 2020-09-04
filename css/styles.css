@@ -16,6 +16,10 @@ html, body {
   color: #222;
 }
 
+.top-bar {
+  height: 3rem;
+}
+
 .navbar {
   padding: .8rem;
 }
@@ -47,6 +51,14 @@ html, body {
 footer {
   /*color: #3f3f3f;
   padding-top: 1rem;*/
+}
+
+/*--- Calendar modifications ---*/
+iframe{
+  display:block;
+  margin:auto;
+  height:100vh;
+  min-height:100vh
 }
 
 /*---Media Queries --*/
