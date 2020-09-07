@@ -21,11 +21,16 @@ html, body {
 }
 
 .navbar {
-  padding: .8rem;
+  /*padding: .8rem;*/
 }
 .navbar-nav li {
   padding-right: 16px;
 }
+
+.navbar-brand {
+  padding-left: 16px;
+}
+
 .nav-link {
   font-size: 1.1em !important
 }
