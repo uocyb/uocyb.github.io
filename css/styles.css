@@ -17,12 +17,9 @@ html, body {
 }
 
 .top-bar {
-  height: 3rem;
+  height: 2rem;
 }
 
-.navbar {
-  /*padding: .8rem;*/
-}
 .navbar-nav li {
   padding-right: 16px;
 }
@@ -58,25 +55,33 @@ html, body {
   color: #d5d5d5;
 }
 
-.fa-key {
-  color: green;
+.fa-user-secret {
+  color: #7b7b7b;
 }
 
-.fa-bug {
-  color: purple;
+.fa-key {
+  color: #E1AD01;
+}
+
+.fa-globe {
+  color: #008080;
 }
 
 .fa-terminal {
-  color: red;
+  color: #23395d;
 }
 
 .fa-history {
-  color: blue;
+  color: #900D09;
 }
 
-.fa-user-secret, .fa-key, .fa-bug, .fa-terminal, .fa-history {
+.fa-user-secret, .fa-key, .fa-globe, .fa-terminal, .fa-history {
   font-size: 4em;
   margin: 1rem;
+}
+
+.link:hover {
+  color: #d5d5d5
 }
 
 footer {
