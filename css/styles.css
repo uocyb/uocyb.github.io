@@ -34,6 +34,11 @@ html, body {
 .nav-link {
   font-size: 1.1em !important
 }
+
+.link {
+  /*color: #222;*/
+}
+
 .social a {
   font-size: 4.5em;
   padding: 3rem;
@@ -51,6 +56,27 @@ html, body {
 .fa-instagram:hover,
 .fa-envelope:hover {
   color: #d5d5d5;
+}
+
+.fa-key {
+  color: green;
+}
+
+.fa-bug {
+  color: purple;
+}
+
+.fa-terminal {
+  color: red;
+}
+
+.fa-history {
+  color: blue;
+}
+
+.fa-user-secret, .fa-key, .fa-bug, .fa-terminal, .fa-history {
+  font-size: 4em;
+  margin: 1rem;
 }
 
 footer {

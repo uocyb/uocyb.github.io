@@ -14,7 +14,9 @@
 	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-	<p>CTF page<p>
+
+<!-- Top Bar -->
+<div class="top-bar"></div>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -29,13 +31,13 @@
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="members.html">Members</a>
+					<a class="nav-link" href="members.html">Board</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="#">CTF</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="links.html">Links</a>
+					<a class="nav-link" href="links.html">Resources</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="calendar.html">Calendar</a>
@@ -45,6 +47,69 @@
 	</div>
 </nav>
 
+<div class="container padding">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+			<div class="container-fluid padding">
+				<div class="row text-center padding">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<i class="fas fa-history"></i>
+						<h4>Reverse Engineering</h4>
+						<hr>
+						<p>
+							Reverse Engineering focuses on understanding the functionality of a
+							compiled program or one written in a low level language with the goal
+							of finding vulnerabilities and exploiting them.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<i class="fas fa-key"></i>
+						<h4>Cryptography</h4>
+						<hr>
+						<p>
+							Crypotgraphy entails breaking common methods of encryption
+							to access intentionally hidden information. There are lots of tools
+							available to achieve this and most instances of CTF cryptography challenges
+							come down to identifying the encryption method being used.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<i class="fas fa-terminal"></i>
+						<h4>Binary Exploitation</h4>
+						<hr>
+						<p>
+							Binary Exploitation involves exploiting a vulnerability in a program to modify its
+							behavior to the attacker's advantage. This is often done through
+							buffer overflow and may involve taking control of a shell.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<i class="fas fa-bug"></i>
+						<h4>Web Exploitation</h4>
+						<hr>
+						<p>
+							Web Exploitation focuses on attacking vulnerabilities specific to
+							the internet. These types of CTF challenges may involve gaining unintended
+							access to a site or attacking legitimate user sessions.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<i class="fas fa-user-secret"></i>
+						<h4>Forensics</h4>
+						<hr>
+						<p>
+							Forensics, fittingly, is the art of tracking digital trails. It
+							typically involves monitoring metadata and manipulating file extensions
+							to find discrepancies or hidden data.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
