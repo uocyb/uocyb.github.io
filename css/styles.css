@@ -54,6 +54,9 @@ html, body {
 .fa-facebook {
   color: #3b5998;
 }
+.fa-twitter {
+  color: #00aced;
+}
 .fa-instagram {
   color: #3f729b;
 }
@@ -62,6 +65,7 @@ html, body {
 }
 .fa-facebook:hover,
 .fa-instagram:hover,
+.fa-twitter:hover,
 .fa-envelope:hover {
   color: #d5d5d5;
 }
