@@ -50,6 +50,9 @@ html, body {
 #newsletter{
     border: 2px solid #d5d5d5;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .social a {
