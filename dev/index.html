@@ -1,212 +1,106 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="This is the official website of the University of Oregon Cybersecurity Club">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The official website of the University of Oregon Cybersecurity Club">
 	<meta name="keywords" content="University, of, Oregon, Cybersecurity, Club, UO, cyber, security, clubs, ctf">
 	<meta name="google-site-verification" content="Ykx8mQAHi4WhIP6vn9zxa6az8s_-HGDF5lAEs9fTf4Y" />
 	<title>Home | University of Oregon Cybersecurity Club</title>
-	<link rel="shortcut icon" href="media/images/uoseclogo_dark_icon.png"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="shortcut icon" href="media/images/uoseclogo_dark_icon.png" />
 	<link href="styles/styles.css" rel="stylesheet">
+	<script src="scripts/bg.js"></script>
 </head>
+
 <body>
+	<!-- Head -->
+	<nav>
+		<ul class="navbar">
+			<img class="corner-logo" src="media/images/uoseclogo.svg">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="ctf.html">CTF</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="links.html">Resources</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="calendar.html">Calendar</a>
+			</li>
+		</ul>
+	</nav>
+	<!--End head------------------------------------------------------------------>
 
-<!-- Top Bar
-<div class="top-bar"></div>
--->
+	<article>
+		<canvas id="parallaxCanvas"></canvas>
 
+		<div class="content">
+			<div class="banner">
+				<img class="logo" src="media/images/uoseclogo.svg">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="index.html"><img src="media/images/uoseclogo_dark.png" alt="Logo" title="Logo" /></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="ctf.html">CTF</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="links.html">Resources</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="calendar.html">Calendar</a>
-				</li>
-			</ul>
+				<h1>Welcome to the University of Oregon</h1>
+				<h1 class="splash-text">CYBERSECURITY CLUB!</h1>
+			</div>
+
+			<h2>>whois cybersecurityclub</h2>
+			<p>We are a group of UO students who are interested in and geared towards advancing student knowledge in all
+				elements of cybersecurity. We have several events that we take part in at and around the University.
+				Below
+				are just a few of the things we focus on at the Cybersecurity Club.</p>
+
+			<div class=grid-parent>
+				<div class="grid-1">
+					<h3>Weekly Meetings</h3>
+					<p>UO Cybersecurity’s weekly meetings are a place for student members to come together to train and
+						learn. We host speakers, lead workshops, and have student-led presentations.</p>
+				</div>
+				<div class="grid-2">
+					<h3>Capture the Flag (CTF) Competitions</h3>
+					<p>CTFs are hacking competitions put on in different locations around the world and online. Our club
+						trains our members with the goal of competing.</p>
+				</div>
+				<div class="grid-3">
+					<h3>...And More!</h3>
+					<p>Attending conferences and summits is a great way for students interested in cybersecurity to
+						learn
+						and network. Stay tuned! We will post all of our events on our calendar.</p>
+				</div>
+			</div>
+
+			<h2>>locate cybersecurityclub</h2>
+			<p>We meet in the Allan Price Science Library with additional room and time information occasionally
+				updating
+				throughout the school year. See our Discord channel for schedule changes or special events.</p>
+
+			<h2>>wget moreinformation</h2>
+			<p>If you want to join, just drop by a meeting and join the Discord! You can also reach out by messaging us
+				on
+				social media or by email.</p>
+
 		</div>
-	</div>
-</nav>
+	</article>
+</body>
 
-<!--- Rudimentary banner, to be made prettier in next update --->
-<!-- <div style="background-color: maroon; text-align: center; color: white; padding-block: 5px;"> -->
-<!--     Next meeting • Thu 4/20 • 5:45 PM • Allan Price Science Library B42 -->
-<!--     </div> -->
-
-<!--- Fixed background (will be on all pages of the site) -->
-<div class="container padding">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
-
-			<div class="cotainer-fluid padding">
-				<div class="row text-center padding">
-					<div class="col-12">
-						<h1>Welcome to the University of Oregon Cybersecurity Club!</h1>
-						<hr>
-
-					</div>
-				</div>
-			</div>
-
-			<!-- Carousel -->
-			<div class="carousel slide" id="slides" data-ride="carousel">
-				<ul class="carousel-indicators">
-					<li data-target="#slides" data-slide-to="0" class="active"></li>
-					<li data-target="#slides" data-slide-to="1"></li>
-					<li data-target="#slides" data-slide-to="2"></li>
-					<li data-target="#slides" data-slide-to="3"></li>
-				</ul>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="media/images/CybClubPic.JPG" alt="">
-					</div>
-					<div class="carousel-item">
-						<img src="media/images/CybCTF.JPG" alt="">
-					</div>
-					<div class="carousel-item">
-						<img src="media/images/CybClubPic2.JPG" alt="">
-					</div>
-					<div class="carousel-item">
-						<img src="media/images/CybSummit.JPG" alt="">
-					</div>
-				</div>
-			</div>
-			<br>
-
-			<!-- Welcome messages -->
-			<div class="row welcome text-center">
-				<div class="col-12">
-					<h4>Who are we?</h4>
-					<hr>
-					<p>
-						We are a group of UO undergraduate students who are interested in
-						and geared towards advancing student knowledge in all elements of cybersecurity.
-					</p>
-				</div>
-
-				<div class="col-12">
-					<h4>What do we do?</h4>
-					<hr>
-					<div class="container-fluid padding">
-						<div class="row">
-							<div class="col-md-4 my-4">
-								<p><strong>Weekly Meetings</strong></p>
-								<hr>
-								<p>
-									UO Cybersecurity’s weekly meetings are a place for student members to
-									come together to train and learn. We host speakers,
-									lead workshops, and have student-led presentations. Stay tuned! We'll post all of our speakers and
-									workshops on our <a class="link" href="calendar.html">calendar</a>.
-								</p>
-							</div>
-
-
-							<div class="col-md-4 my-4">
-								<p><strong>Capture the Flag (CTF) Competitions</strong></p>
-								<hr>
-								<p>
-									<a class="link" href="ctf.html">CTFs</a> are hacking competitions put on in different locations
-									around the world and online. Groups of all kinds, including
-									student groups, compete to practice their skills and learn
-									the ins and outs of threats they will likely encounter from
-									dangerous hacking entities in their various careers of choice.
-									Our club trains our members with the goal of competing in competitions.
-								</p>
-							</div>
-
-							<div class="col-md-4 my-4">
-								<p><strong>Conferences/Volunteer Events</strong></p>
-								<hr>
-								<p>
-									Attending and volunteering at conferences and summits is a
-									great way for students interested in cybersecurity to learn
-									and network. The UO Cybersecurity Board is in the process of planning
-									for the conferences and summits the club will attend this year.
-									Stay tuned! We will post all of our events on our
-									<a class="link" href="calendar.html">calendar</a>.
-								</p>
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12">
-					<h4>When do we meet?</h4>
-					<hr>
-                    <p>We meet in the Allan Price Science Library with additional room and time information to be posted during the school year. See our <a href="calendar.html">calendar</a> for schedule changes or special events.</p>
-					</p>
-				</div>
-
-				<div class="col-12">
-					<h4>How can I join?</h4>
-					<hr>
-					<p>
-						Join our Discord server and stop by our meetings! Message us on social media or email us (uosecurityclub@uoregon.edu)
-						if you have any questions.
-					</p>
-					<p>Discord join link: <a class="link" href="https://discord.gg/wn4T3byxh4" target="_blank">discord.gg/wn4T3byxh4</a></p>
-				</div>
-			</div>
-
-
-			<!--- Connect section -->
-			<div class="row text-center padding">
-				<div class="col-12">
-					<hr class="my-4" />
-					<br />
-					<h2>Connect with us!</h2>
-				</div>
-				<div class="col-12 social padding">
-					<a href="https://www.instagram.com/uo_sec/" target="_blank"><i class="fab fa-instagram"></i></a>
-					<a href="mailto:uosecurityclub@uoregon.edu" target="_blank"><i class="fas fa-envelope"></i></a>
-				</div>
-			</div>
-
-
-			<!-- Newsletter start -->
-
-			<!-- Newsletter end -->
-
-    </div>
-  </div>
-</div>
-
-<!--- Footer (used for all pages on the website)
-- may want to move social media here, add meeting times
-and location, email address, (and other links?) -->
+<!--- Footer (used for all pages on the website) -->
 <footer>
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-12">
-				<p>
-					&copy; UOSec 2025
-				</p>
-			</div>
-		</div>
+	<div class="social-icons">
+		<a href="https://www.instagram.com/uo_sec/">
+			<img class="icon-1" src="media/images/ig-icon.svg">
+		</a>
+		<a href="https://discord.com/invite/wn4T3byxh4">
+			<img class="icon-2" src="media/images/discord-icon.svg">
+		</a>
+		<a href="mailto:uosecurityclub@uoregon.edu">
+			<img class="icon-3" src="media/images/mail-icon.svg">
+		</a>
 	</div>
+	<p>
+		&copy; UOSEC 2025
+	</p>
 </footer>
 
-</body>
 </html>
