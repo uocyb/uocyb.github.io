@@ -1,244 +1,180 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Resources | UOSec</title>
-	<link rel="shortcut icon" href="media/images/uoseclogo_dark_icon.png"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The official website of the University of Oregon Cybersecurity Club">
+	<meta name="keywords" content="University, of, Oregon, Cybersecurity, Club, UO, cyber, security, clubs, ctf">
+	<meta name="google-site-verification" content="Ykx8mQAHi4WhIP6vn9zxa6az8s_-HGDF5lAEs9fTf4Y" />
+	<title>Capture the Flag | University of Oregon Cybersecurity Club</title>
+	<link rel="shortcut icon" href="media/images/uoseclogo.svg" />
 	<link href="styles/styles.css" rel="stylesheet">
+	<script src="scripts/bg.js"></script>
 </head>
+
 <body>
+	<!-- Head -->
+	<nav>
+		<ul class="navbar">
+			<img class="corner-logo" src="media/images/uoseclogo.svg">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="ctf.html">CTF</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="links.html">Resources</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="calendar.html">Calendar</a>
+			</li>
+		</ul>
+	</nav>
+	<!--End head------------------------------------------------------------------>
 
-<!-- Top Bar
-<div class="top-bar"></div>
--->
+	<article>
+		<canvas id="parallaxCanvas"></canvas>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="index.html"><img src="media/images/uoseclogo_dark.png" alt="Logo" title="Logo" /></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="ctf.html">CTF</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Resources</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="calendar.html">Calendar</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+		<div class="content">
+			<h1 class="title">RESOURCES</h1>
 
-<div class="container padding">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
+			<p>
+				Here you can find more information about jobs and opportunities at the UO and within the CS department,
+				as well as CTF training resources, organizations that work closely with UOSec, and upcoming
+				events.
+			</p>
 
-			<div class="container-fluid padding">
-				<div class="row text-center padding">
-					<div class="col-12">
-						<h2>General Resources</h2>
-						<hr>
-						<p>
-							Here you can find more information about jobs and opportunities at the UO and
-							within the CS department, as well as CTF training resources, homepages of
-							organizations that work closely with UOSec, and upcoming events.
-						</p>
-					</div>
+			<div class="resources-parent">
+				<div class="resources-1">
+					<h2>CTF Training</h2>
+					<ul>
+						<li>
+							<a href="https://ctf101.org/">CTF 101 (Highly Recommended for Beginners)</a>
+						</li>
+						<li>
+							<a href="https://overthewire.org/wargames/bandit/">Bandit Wargames</a>
+						</li>
+						<li>
+							<a href="https://ctftime.org/">CTF Time</a>
+						</li>
+						<li>
+							<a href="https://nsa-codebreaker.org/challenge">NSA Codebreaker Challenge</a>
+						</li>
+						<li>
+							<a href="https://picoctf.org/">Pico CTF</a>
+						</li>
+						<li>
+							<a href="https://gchq.github.io/CyberChef/">CyberChef</a>
+						</li>
+					</ul>
 				</div>
-			</div>
 
-			<div class="container-fluid padding">
-				<div class="row">
+				<div class="resources-2">
+					<h2>Organizations</h2>
+					<ul>
+						<li>
+							<a href="https://ccsp.uoregon.edu/">Center for Cybersecurity and Privacy (CCSP)</a>
+						</li>
+						<li>
+							<a href="https://cs.uoregon.edu/">UO Computer Science Department</a>
+						</li>
+						<li>
+							<a href="https://wicsuo.github.io/wics/">Women in Computer Science (WiCS)</a>
+						</li>
+						<li>
+							<a href="https://infosec.uoregon.edu/">UO InfoSec</a>
+						</li>
+						<li>
+							<a href="https://www.techoregon.org/">Technology Association of Oregon (TAO)</a>
+						</li>
+					</ul>
+				</div>
 
-					<div class="col-md-4 my-4">
-						<h5 class="text-center">Related Organizations</h5>
-						<hr>
-						<ul>
-							<li>
-								<a href="https://ccsp.uoregon.edu/" class="link" target="_blank">Center for Cybersecurity and Privacy (CCSP)</a>
-							</li>
-							<li>
-								<a href="https://cs.uoregon.edu/" class="link" target="_blank">UO Computer Science Department</a>
-							</li>
-							<li>
-								<a href="https://wicsuo.github.io/wics/" class="link" target="_blank">Women in Computer Science (WiCS)</a>
-							</li>
-							<li>
-								<a href="https://infosec.uoregon.edu/" class="link" target="_blank">UO InfoSec</a>
-							</li>
-							<li>
-								<a href="https://www.techoregon.org/" class="link" target="_blank">Technology Association of Oregon (TAO)</a>
-							</li>
-							<li>
-								<a href="https://eugeneoregonissachaptereoc.org/" class="link" target="_blank">Eugene ISSA</a>
-							</li>
-						</ul>
-					</div>
+				<div class="resources-3">
+					<h2>Opportunities</h2>
+					<ul>
+						<li>
+							<a href="https://career.uoregon.edu/">UO Career Center</a>
+						</li>
+						<li>
+							<a href="https://cs.uoregon.edu/employment-opportunities">UO Computer Science Employment
+								Opportunities</a>
+						</li>
+						<li>
+							<a href="https://hr.uoregon.edu/jobs">Human Resources Info</a>
+						</li>
+					</ul>
+				</div>
 
-					<div class="col-md-4 my-4">
-						<h5 class="text-center">Jobs and Internships</h5>
-						<hr>
-						<ul>
-							<li>
-								<a href="https://career.uoregon.edu/" class="link" target="_blank">UO Career Center</a>
-							</li>
-							<li>
-								<a href="https://cs.uoregon.edu/employment-opportunities" class="link" target="_blank">UO Computer Science Employment Opportunities</a>
-							</li>
-							<li>
-								<a href="https://hr.uoregon.edu/jobs" class="link" target="_blank">Human Resources Info</a>
-							</li>
-						</ul>
-					</div>
+				<div class="resources-4">
+					<h2>Certifications</h2>
+					<ul>
+						<li>
+							<a href="https://www.isc2.org/">ISC2 Certifications</a>
+						</li>
+						<li>
+							<a href="https://aws.amazon.com/certification/">AWS</a>
+						</li>
+						<li>
+							<a href="https://www.comptia.org">CompTIA</a>
+						</li>
+					</ul>
+				</div>
 
-					<div class="col-md-4 my-4">
-						<h5 class="text-center">CTF Training</h5>
-						<hr>
-						<ul>
-							<li>
-								<a href="https://ctf101.org/" class="link" target="_blank">CTF 101 (Highly Recommended for Beginners)</a>
-							</li>
-							<li>
-								<a href="https://overthewire.org/wargames/bandit/" class="link" target="_blank">Bandit Wargames</a>
-							</li>
-							<li>
-								<a href="https://ctftime.org/" class="link" target="_blank">CTF Time</a>
-							</li>
-							<li>
-								<a href="https://codebreaker.ltsnet.net/resources" class="link" target="_blank">NSA Codebreaker Challenge</a>
-							</li>
-							<li>
-								<a href="https://mitrecyberacademy.org/" class="link" target="_blank">Mitre Academy</a>
-							</li>
-							<li>
-								<a href="https://picoctf.org/" class="link" target="_blank">Pico CTF</a>
-							</li>
-							<li>
-								<a href="https://gchq.github.io/CyberChef/" class="link" target="_blank">CyberChef</a>
-							</li>
-						</ul>
-					</div>
+				<div class="resources-5">
+					<h2>Social Media</h2>
+					<ul>
+						<li>
+							<a
+								href="https://uoregon.campuslabs.com/engage/organization/university-of-oregon-cybersecurity-club">Engage</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/uo_sec/">Instagram</a>
+						</li>
+						<li>
+							<a href="https://discord.com/invite/wn4T3byxh4">Discord</a>
+						</li>
+					</ul>
+				</div>
 
-					<div class="col-md-4 my-4">
-						<h5 class="text-center">Social Media</h5>
-						<hr>
-						<ul>
-							<li>
-								<a href="https://www.facebook.com/UO-Cybersecurity-Club-762321300797403/" class="link" target="_blank">Facebook</a>
-							</li>
-							<li>
-								<a href="https://uoregon.campuslabs.com/engage/organization/university-of-oregon-cybersecurity-club" class="link" target="_blank">Engage</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/uo_sec/" class="link" target="_blank">Instagram</a>
-							</li>
-							<li>
-								<a href="https://discord.com/invite/wn4T3byxh4" class="link" target="_blank">Discord</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-md-4 my-4">
-						<h5 class="text-center">Misc Resources</h5>
-						<hr>
-						<ul>
-							<li>
-								<a href="https://phishtank.uoregon.edu/" class="link" target="_blank">UO Phish Tank</a>
-							</li>
-							<li>
-								<a href="https://www.cyberseek.org/pathway.html" class="link" target="_blank">CyberSeek</a>
-							</li>
-							<li>
-								<a href="https://cybersecurityguide.org/" class="link" target="_blank">Cybersecurity Guide</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-md-4 my-4">
-						<h5 class="text-center">Certifications</h5>
-						<hr>
-						<ul>
-							<li>
-								<a href="https://www.isc2.org/" class="link" target="_blank">ISC2 Certifications</a>
-							</li>
-							<li>
-								<a href="https://aws.amazon.com/certification/ " class="link" target="_blank">AWS</a>
-							</li>
-							<li>
-								<a href="https://www.comptia.org/landing/securityplus/index.html?gclid=CjwKCAjw8-78BRA0EiwAFUw8LOPe81p6aqZbxztYlwJmZCDijjySSfiQ5W2F9ZcWnN6M3KIrKzJoAxoCxdUQAvD_Bw" class="link" target="_blank">CompTIA</a>
-							</li>
-						</ul>
-					</div>
-
-<!-- Events -->
-					<div class="col-md-4 my-4">
-						<h5 class="text-center">Past Events</h5>
-						<hr>
-						<ul>
-							<li>
-								<a href="https://dru.uoregon.edu/oregon-cyber-resilience-summit-2019" class="link" target="_blank">2019 Oregon Cyber Resilience Summit</a>
-							</li>
-							<li>
-								<a href="https://ctftime.org/event/929" class="link" target="_blank">UTCTF 2020</a>
-							</li>
-							<li>
-								<a href="https://dru.uoregon.edu/oregon-cyber-resilience-summit-2020" class="link" target="_blank">2020 Oregon Cyber Resilience Summit</a>
-							</li>
-							<li>
-								<a href="https://metactf.com/cybergames" class="link" target="_blank">MetaCTF Cybergames 2020</a>
-							</li>
-							<li>
-								<a href="https://hackyholidays.io/" class="link" target="_blank">Hacky Holidays</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-md-4 my-4">
-						<h5 class="text-center">Upcoming Events</h5>
-						<hr>
-						<ul>
-							<li>
-								<p>TBD</p>
-							</li>
-						</ul>
-					</div>
-
+				<div class="resources-6">
+					<h2>Miscellaneous</h2>
+					<ul>
+						<li>
+							<a href="https://phishtank.uoregon.edu/">UO Phish Tank</a>
+						</li>
+						<li>
+							<a href="https://www.cyberseek.org/pathway.html">CyberSeek</a>
+						</li>
+						<li>
+							<a href="https://cybersecurityguide.org/">Cybersecurity Guide</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</article>
+</body>
 
-<!--- Footer (used for all pages on the website)
-- may want to move social media here, add meeting times
-and location, email address, (and other links?) -->
+<!--- Footer (used for all pages on the website) -->
 <footer>
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-12">
-				<p>
-					&copy; UOSec 2025
-				</p>
-			</div>
-		</div>
+	<div class="social-icons">
+		<a href="https://www.instagram.com/uo_sec/">
+			<img class="icon-1" src="media/images/ig-icon.svg">
+		</a>
+		<a href="https://discord.com/invite/wn4T3byxh4">
+			<img class="icon-2" src="media/images/discord-icon.svg">
+		</a>
+		<a href="mailto:uosecurityclub@uoregon.edu">
+			<img class="icon-3" src="media/images/mail-icon.svg">
+		</a>
 	</div>
+	<p>
+		&copy; UOSEC 2025
+	</p>
 </footer>
 
-</body>
 </html>

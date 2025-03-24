@@ -247,6 +247,198 @@ footer .icon-3 {
   align-items: center;
 }
 
-.icon-1:hover, .icon-2:hover, .icon-3:hover {
-  filter: hue-rotate(90deg), brightness(40); /*Does nothing currently */
+/* Capture the Flag styling ------------------------------------------*/
+
+.title {
+  font-family: United Sans;
+  font-weight: 800;
+  font-size: 50px;
+  justify-self: center;
+  text-align: center;
+}
+
+.dropdown-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+details {
+  margin: 5px;
+  display: block;
+  width: 90%;
+  padding-left: 10px;
+  user-select: none;
+}
+
+details h2 {
+  font-family: United Sans;
+  font-weight: 800;
+  margin: 5px auto;
+}
+
+summary {
+  list-style-type: none;
+}
+
+.dropdown-1,
+.dropdown-2,
+.dropdown-3,
+.dropdown-4,
+.dropdown-5 {
+  display: block;
+  border-radius: 0px 40px 0px 0px;
+}
+
+.dropdown-1 {
+  background-color: #8A98B7;
+}
+
+.dropdown-1[open] {
+  background-color: #8A98B7;
+}
+
+.dropdown-2 {
+  background-color: #8A8CB5;
+}
+
+.dropdown-3 {
+  background-color: #AF8AB5;
+}
+
+.dropdown-4 {
+  background-color: #B58AA0;
+}
+
+.dropdown-5 {
+  background-color: #B58A8A;
+}
+
+.dropdown-content {
+  padding: 15px;
+  user-select: text;
+}
+
+/* Resources Styling */
+
+.resources-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+@media(max-width:1200px) {
+
+  .resources-parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:600px) {
+
+  .resources-parent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.resources-parent h2 {
+  font-family: United Sans;
+  font-weight: 800;
+  text-align: center;
+}
+
+.resources-1,
+.resources-2,
+.resources-3,
+.resources-4,
+.resources-5,
+.resources-6 {
+  width: 310px;
+  height: 310px;
+  margin: 5px;
+}
+
+.resources-parent ul {
+  margin: 10px;
+}
+
+.resources-parent a {
+  text-decoration: none;
+  color: #222;
+  transition: color 0.15s ease, font-weight 0.15s ease;
+}
+
+.resources-parent a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.resources-1,
+.resources-2,
+.resources-3 {
+  background-color: #AEBDCE;
+}
+
+.resources-4,
+.resources-5,
+.resources-6 {
+  background-color: #85A3C1;
+}
+
+/* Meet The Team styling*/
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  margin: 50px;
+  gap: 30px;
+  display: grid;
+  justify-self: center;
+}
+
+@media(max-width:1200px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 4fr);
+  }
+}
+
+@media(max-width:600px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 4fr);
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 325px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9FA1A3;
+  clip-path: circle(120px);
+  width: 250px;
+  height: 250px;
+  filter: grayscale();
+}
+
+.name {
+  margin: 5px;
+}
+
+.role {
+  margin: 5px;
+  font-style: italic;
 }

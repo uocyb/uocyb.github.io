@@ -1,149 +1,124 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="University of Oregon Cybersecurity CTF">
-	<title>CTF | UOSec</title>
-	<link rel="shortcut icon" href="media/images/uoseclogo_dark_icon.png"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The official website of the University of Oregon Cybersecurity Club">
+	<meta name="keywords" content="University, of, Oregon, Cybersecurity, Club, UO, cyber, security, clubs, ctf">
+	<meta name="google-site-verification" content="Ykx8mQAHi4WhIP6vn9zxa6az8s_-HGDF5lAEs9fTf4Y" />
+	<title>Capture the Flag | University of Oregon Cybersecurity Club</title>
+	<link rel="shortcut icon" href="media/images/uoseclogo.svg" />
 	<link href="styles/styles.css" rel="stylesheet">
+	<script src="scripts/bg.js"></script>
 </head>
+
 <body>
+	<!-- Head -->
+	<nav>
+		<ul class="navbar">
+			<img class="corner-logo" src="media/images/uoseclogo.svg">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="ctf.html">CTF</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="links.html">Resources</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="calendar.html">Calendar</a>
+			</li>
+		</ul>
+	</nav>
+	<!--End head------------------------------------------------------------------>
 
-<!-- Top Bar
-<div class="top-bar"></div>
--->
+	<article>
+		<canvas id="parallaxCanvas"></canvas>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="index.html"><img src="media/images/uoseclogo_dark.png" alt="Logo" title="Logo" /></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">CTF</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="links.html">Resources</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="calendar.html">Calendar</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+		<div class="content">
+			<h1 class="title">CAPTURE THE FLAG (CTF)</h1>
 
-<div class="container padding">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
-			<div class="container-fluid padding">
-				<div class="row text-center padding">
-					<div class="col-12">
-						<h2>Capture the Flag (CTF)</h2>
-						<hr>
-						<p>
-							 Capture the Flag (aka CTF) competitions are timed events in which
-							 teams compete to “hack” their way to various flags or targets.
-							 CTFs are held in either a Jeopardy format or a Red-Blue format.
-							 Jeopardy CTFs involve a number of distinct puzzles in which
-							 finding the flag from each challenge awards points. Typically,
-							 puzzles that are solved by fewer teams are worth more points.
-							 In Red-Blue CTFs, teams host servers and go head-to-head in an
-							 attempt to exploit weaknesses in the opposing server while
-							 securing their own.
-						 </p>
-						 <p>
-						 	So far, our team has primarily focused on the Jeopardy format,
-							but may branch out to internal Red-Blue competitions in the future.
-							The most common Jeopardy-style CTF categories are described below.
-						 </p>
-					</div>
+			<p>Capture the Flag (CTF) competitions are timed events in which teams race to “hack” their way to various
+				flags or targets. CTFs are held in either a Jeopardy format or a Red-Blue format. Jeopardy CTFs involve
+				a number of distinct puzzles in which finding the flag from each challenge awards points. Typically,
+				puzzles that are solved by fewer teams are worth more points. In Red-Blue CTFs, teams host servers and
+				go head-to-head in an attempt to exploit weaknesses in the opposing server while securing their own.
+				<br><br>
+				So far, our team has primarily focused on the Jeopardy format, but may branch out to internal Red-Blue
+				competitions in the future. The most common Jeopardy-style CTF categories are described below.
+			</p>
 
-					<!-- Summary Sections -->
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<i class="fas fa-terminal"></i>
-						<h4>Binary Exploitation</h4>
-						<hr>
-						<p>
-							Binary Exploitation involves exploiting a vulnerability in a program to modify its
-							behavior to the attacker's advantage. This is often done through
-							buffer overflow and may involve taking control of a shell.
-						</p>
+			<div class="dropdown-parent">
+
+				<details class="dropdown-1">
+					<summary>
+						<h2>Binary Exploitation</h2>
+					</summary>
+					<div class="dropdown-content">
+						Exploiting a vulnerability in a program to modify its behavior to the attacker's advantage. This
+						is often done through buffer overflow and may involve taking control of a shell.
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<i class="fas fa-key"></i>
-						<h4>Cryptography</h4>
-						<hr>
-						<p>
-							Crypotgraphy entails breaking common methods of encryption
-							to access intentionally hidden information. There are lots of tools
-							available to achieve this and most instances of CTF cryptography challenges
-							come down to identifying the encryption method being used.
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<i class="fas fa-user-secret"></i>
-						<h4>Forensics</h4>
-						<hr>
-						<p>
-							Forensics, fittingly, is the art of tracking digital trails. It
-							typically involves monitoring metadata and manipulating file extensions
-							to find discrepancies or hidden data.
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<i class="fas fa-history"></i>
-						<h4>Reverse Engineering</h4>
-						<hr>
-						<p>
-							Reverse Engineering focuses on understanding the functionality of a
-							compiled program or one written in a low level language with the goal
-							of finding vulnerabilities and exploiting them.
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4">
-						<i class="fas fa-globe"></i>
-						<h4>Web Exploitation</h4>
-						<hr>
-						<p>
-							Web Exploitation focuses on attacking vulnerabilities specific to
-							the internet. These types of CTF challenges may involve gaining unintended
-							access to a site or attacking legitimate user sessions.
-						</p>
-					</div>
-				</div>
+				</details>
+
+				<details class="dropdown-2">
+					<summary>
+						<h2>Cryptography</h2>
+					</summary>
+					<div class="dropdown-content">Bypassing encryption to access confidential information. There are
+						lots of tools available to achieve this and most instances of these challenges come down to
+						identifying the encryption
+						method.</div>
+				</details>
+
+				<details class="dropdown-3">
+					<summary>
+						<h2>Forensics</h2>
+					</summary>
+					<div class="dropdown-content">The art of tracking digital trails. It involves monitoring metadata
+						and manipulating file extensions
+						to find discrepancies or secrets.</div>
+				</details>
+
+				<details class="dropdown-4">
+					<summary>
+						<h2>Reverse Engineering</h2>
+					</summary>
+					<div class="dropdown-content">Understanding the functionality of a compiled program with the goal of
+						finding vulnerabilities and exploiting them.</div>
+				</details>
+
+				<details class="dropdown-5">
+					<summary>
+						<h2>Web Exploitation</h2>
+					</summary>
+					<div class="dropdown-content">Attacking vulnerabilities specific to the internet. These types of CTF
+						challenges may involve
+						gaining unintended access to a site or attacking legitimate user sessions.</div>
+				</details>
 			</div>
-    </div>
-  </div>
-</div>
+		</div>
+	</article>
+</body>
 
-<!--- Footer (used for all pages on the website)
-- may want to move social media here, add meeting times
-and location, email address, (and other links?) -->
+<!--- Footer (used for all pages on the website) -->
 <footer>
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-12">
-				<p>
-					&copy; UOSec 2025
-				</p>
-			</div>
-		</div>
+	<div class="social-icons">
+		<a href="https://www.instagram.com/uo_sec/">
+			<img class="icon-1" src="media/images/ig-icon.svg">
+		</a>
+		<a href="https://discord.com/invite/wn4T3byxh4">
+			<img class="icon-2" src="media/images/discord-icon.svg">
+		</a>
+		<a href="mailto:uosecurityclub@uoregon.edu">
+			<img class="icon-3" src="media/images/mail-icon.svg">
+		</a>
 	</div>
+	<p>
+		&copy; UOSEC 2025
+	</p>
 </footer>
 
-</body>
 </html>
