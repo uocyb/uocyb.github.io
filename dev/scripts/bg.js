@@ -87,3 +87,24 @@ document.addEventListener("DOMContentLoaded", () => {
         initBars();
     });
 });
+
+//Something
+let Code = [
+    'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'
+];
+
+let Index = 0;
+
+// Listen for keydown events
+document.addEventListener('keydown', (e) => {
+    if (e.key === Code[Index]) {
+        Index++;
+        if (Index === Code.length) {
+            // Trigger
+            alert('Konami Code Activated!');
+            Index = 0; // Reset
+        }
+    } else {
+        Index = 0; // Reset upon wrong key
+    }
+});
