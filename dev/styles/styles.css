@@ -117,6 +117,7 @@ canvas {
   position: fixed;
   background-color: #363B49;
   top: 0;
+  z-index: 1;
 }
 
 nav {
