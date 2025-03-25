@@ -396,7 +396,8 @@ summary {
 .resources-parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-self: center;
+  align-content: center;
+  justify-content: center;
   padding: 20px;
   padding-bottom: 0px;
 }
@@ -413,7 +414,6 @@ summary {
 
   .resources-parent {
     grid-template-columns: repeat(1, 1fr);
-    justify-self: center;
   }
 }
 
