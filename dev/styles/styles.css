@@ -400,13 +400,14 @@ summary {
   justify-content: center;
   padding: 20px;
   padding-bottom: 0px;
+  width: 100%;
 }
 
 @media(max-width:1200px) {
 
   .resources-parent {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
+    margin: 0;
   }
 }
 
@@ -414,6 +415,7 @@ summary {
 
   .resources-parent {
     grid-template-columns: repeat(1, 1fr);
+    margin: 0;
   }
 }
 
