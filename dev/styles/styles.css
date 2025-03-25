@@ -397,7 +397,7 @@ summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-content: center;
-  justify-content: center;
+  justify-items: center;
   padding: 20px;
   padding-bottom: 0px;
   width: 100%;
@@ -407,7 +407,6 @@ summary {
 
   .resources-parent {
     grid-template-columns: repeat(2, 1fr);
-    margin: 0;
   }
 }
 
@@ -415,7 +414,6 @@ summary {
 
   .resources-parent {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0;
   }
 }
 
@@ -431,7 +429,6 @@ summary {
 .resources-4,
 .resources-5,
 .resources-6 {
-  width: 100%;
   max-width: 310px;
   height: 310px;
   margin: 5px;
@@ -463,6 +460,10 @@ summary {
 .resources-5,
 .resources-6 {
   background-color: #85A3C1;
+}
+
+@media(max-width: 400px) {
+
 }
 
 /* Meet The Team styling*/
