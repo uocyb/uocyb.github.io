@@ -413,7 +413,7 @@ summary {
 
   .resources-parent {
     grid-template-columns: repeat(1, 1fr);
-    justify-self: unset;
+    justify-items: center;
   }
 }
 
@@ -429,7 +429,8 @@ summary {
 .resources-4,
 .resources-5,
 .resources-6 {
-  width: 310px;
+  width: 100%;
+  max-width: 310px;
   height: 310px;
   margin: 5px;
 }
