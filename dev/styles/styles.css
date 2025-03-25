@@ -116,6 +116,11 @@ canvas {
   /* Ensure canvas stays behind navbar */
 }
 
+article {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-bar {
   width: 100%;
   position: fixed;
@@ -400,6 +405,7 @@ summary {
 
   .resources-parent {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
 }
 
@@ -515,6 +521,8 @@ summary {
   justify-self: center;
   box-shadow: 0px 20px 30px rgba(30, 30, 30, 0.2);
   max-width: 1000px;
+  margin: 0;
+  padding: 0;
 }
 
 @media(max-width: 600px) {
