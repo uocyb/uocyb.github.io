@@ -99,46 +99,6 @@ html {
   padding: 0;
 }
 
-.navbar {
-  display: flex;
-  width: 100%;
-  font-size: 20px;
-  margin: 0px;
-  padding: 0px;
-  font-family: Open Sans;
-  justify-content: center;
-  ;
-  background-color: #363B49;
-  height: 50px;
-  align-items: center;
-  list-style-type: none;
-  left: 0;
-  top: 0;
-  margin-bottom: 20px;
-  position: fixed;
-  /* Ensure navbar stays on top */
-  z-index: 1;
-  /* Makes sure navbar is above canvas */
-  user-select: none;
-}
-
-.corner-logo {
-  width: 40px;
-  filter: invert();
-  margin-right: 15px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.05s ease-in-out;
-  margin: 0px 15px 0px 15px;
-}
-
-.navbar a:hover {
-  color: rgb(255, 217, 0);
-}
-
 canvas {
   display: block;
   position: fixed;
@@ -152,12 +112,80 @@ canvas {
   /* Ensure canvas stays behind navbar */
 }
 
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  background-color: #363B49;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  font-family: Open Sans;
+  align-items: center;
+  justify-content: center;
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  z-index: 1;
+  /* Makes sure navbar is above canvas */
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  margin: 5px
+}
+
+.corner-logo {
+  width: 40px;
+  filter: invert();
+  margin-right: 15px;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.05s ease-in-out;
+  margin: 0px 15px 0px 15px;
+}
+
+nav a:hover {
+  color: rgb(255, 217, 0);
+}
+
+@media(max-width: 600px) {
+
+  nav ul {
+    font-size: 15px;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul a {
+    margin: 0px 10px 0px 10px;
+    font-weight: bold;
+  }
+}
 
 .content {
   background-color: white;
   max-width: 1200px;
   margin: auto;
   padding: 82px;
+}
+
+@media(max-width: 600px) {
+  .content {
+    padding: 15px;
+    padding-bottom: 25px;
+    margin-top: 50px;
+  }
 }
 
 .banner {
@@ -182,6 +210,24 @@ canvas {
   font-weight: 800;
 }
 
+@media(max-width: 600px) {
+  .banner {
+    padding: 10px 5px 10px 5px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .banner h1 {
+    font-size: 20pt;
+  }
+
+  .banner .splash-text {
+    font-size: 28pt;
+  }
+}
+
 h2 {
   font-family: Red Hat Mono;
   font-weight: 600;
@@ -193,7 +239,8 @@ p {
 }
 
 .grid-parent {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-content: center;
   justify-content: center;
   gap: 45px;
@@ -210,8 +257,8 @@ p {
 .grid-1,
 .grid-2,
 .grid-3 {
-  width: 308px;
-  height: 245px;
+  max-width: 308px;
+  min-height: 230px;
   padding: 20px;
   border: solid 5px #D1D3D4;
   justify-content: center;
@@ -221,6 +268,18 @@ p {
 .grid-parent p {
   margin: 0px;
   font-size: 15pt;
+}
+
+@media(max-width: 600px) {
+  .grid-parent {
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-parent h3 {
+    font-size: 18pt;
+  }
+
 }
 
 footer {
@@ -447,5 +506,15 @@ summary {
 /* Calendar Styling */
 
 .calendar {
-  box-shadow: 0px 20px 30px rgba(30, 30, 30, 0.2)
+  box-shadow: 0px 20px 30px rgba(30, 30, 30, 0.2);
+  max-width: 1200px;
+}
+
+@media(max-width: 600px) {
+
+  .calendar {
+    max-width: 300px;
+    display: flex;
+    justify-self: center;
+  }
 }
