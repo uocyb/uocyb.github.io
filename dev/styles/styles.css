@@ -469,16 +469,15 @@ summary {
 
 .resources-parent ul {
   margin: 10px;
+  list-style-type: none;
 }
 
 .resources-parent a {
-  text-decoration: none;
   color: #222;
   transition: color 0.15s ease, font-weight 0.15s ease;
 }
 
 .resources-parent a:hover {
-  text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
