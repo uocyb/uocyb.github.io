@@ -429,7 +429,7 @@ summary {
 .resources-4,
 .resources-5,
 .resources-6 {
-  max-width: 310px;
+  width: 310px;
   height: 310px;
   margin: 5px;
 }
