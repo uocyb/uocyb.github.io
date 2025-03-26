@@ -470,6 +470,7 @@ summary {
 .resources-parent ul {
   margin: 10px;
   list-style-type: none;
+  padding: 10px;
 }
 
 .resources-parent a {
@@ -503,7 +504,7 @@ summary {
   .resources-5,
   .resources-6 {
     width: 275px;
-    height: 275px;
+    height: 285px;
   }
 }
 
