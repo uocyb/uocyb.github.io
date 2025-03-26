@@ -495,6 +495,19 @@ summary {
   background-color: #85A3C1;
 }
 
+@media(max-width: 600px) {
+
+  .resources-1,
+  .resources-2,
+  .resources-3,
+  .resources-4,
+  .resources-5,
+  .resources-6 {
+    width: 275px;
+    height: 275px;
+  }
+}
+
 /* Meet The Team styling*/
 
 .team-grid {
