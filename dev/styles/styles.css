@@ -575,13 +575,13 @@ summary {
 @media(max-width: 800px) {
 
   .calendar {
-    max-width: 600px;
+    width: 600px;
   }
 }
 
 @media(max-width: 600px) {
 
   .calendar {
-    max-width: 320px;
+    width: 320px;
   }
 }
