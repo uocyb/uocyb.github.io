@@ -101,7 +101,7 @@ document.addEventListener('keydown', (e) => {
         Index++;
         if (Index === Code.length) {
             // Trigger
-            alert('Konami Code Activated!');
+            window.location.href = "bird.html"
             Index = 0; // Reset
         }
     } else {
