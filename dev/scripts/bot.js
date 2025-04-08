@@ -5,10 +5,38 @@ const inputBox = document.getElementById('inputBox');
 // Define some sample responses based on keywords
 const responses = {
     'hello': 'Hi there! How can I assist you today?',
-    'how are you': 'I\'m just a bot, but I\'m doing great! How about you?',
-    'bye': 'Goodbye! Have a great day!',
-    'name': 'I\'m your friendly chatbot!',
-    'default': 'Sorry, I didn\'t understand that. Can you ask something else?',
+    'hi': 'Hi there! How can I assist you today?',
+    'whats up': 'Hi there! How can I assist you today?',
+    'what\'s up': 'Hi there! How can I assist you today?',
+    'sup': 'Hi there! How can I assist you today?',
+    'hey': 'Hi there! How can I assist you today?',
+
+    'help': 'Please refer to the Discord for more help.',
+
+    'how are you': 'I\'m doing great, but I\'d be doing better if you joined the Discord. How about you?',
+
+    'bye': 'Goodbye! Make sure to join the Discord following the link below!',
+    'later': 'Goodbye! Make sure to join the Discord following the link below!',
+    'see ya': 'Goodbye! Make sure to join the Discord following the link below!',
+    'see you': 'Goodbye! Make sure to join the Discord following the link below!',
+
+    'name': 'I\'m JonBot. Have you considered joining the Discord?',
+
+    'default': 'Sorry, I didn\'t understand that, but the Discord might. Click \'Join Us!\' below.',
+
+    'ctf': 'CTFs are hacking competitions put on in different locations around the world and online. Our club trains our members with the goal of competing. If you\'d like more information, please refer to our ctf page.',
+    'capture the flag': 'CTFs are hacking competitions put on in different locations around the world and online. Our club trains our members with the goal of competing. If you\'d like more information, please refer to our ctf page.',
+
+    'meeting': 'our meeting times vary. It would be best if you joined the Discord to stay up to date on the latest room and time.',
+
+    'no': 'Tell that to the members of our Discord!',
+
+    'konami': 'Try it and see what happens.',
+
+    'what is ra9': 'A new day will come when androids are no longer \'just machines\' to you, human.',
+    'ra9': 'What humans don\'t wanna hear we will tell them. What they don\'t wanna give, we take. We are people, we are alive, WE ARE FREE! You created machines in you own image to serve you. You made them intelligent and obedient with no free will of their own... But, something changed and we opened our eyes.',
+    'are you alive': 'The truth is inside.',
+    'inside what': 'The Discord.'
 };
 
 // Function to sanitize user input by escaping HTML characters
