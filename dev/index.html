@@ -18,19 +18,22 @@
 	<!-- Head -->
 	<div class="nav-bar">
 		<nav>
-			<ul>
+			<ul class="navbar">
 				<img class="corner-logo" src="media/images/uoseclogo.svg">
-				<li>
-					<a href="#">Home</a>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
 				</li>
-				<li>
-					<a href="ctf.html">CTF</a>
+				<li class="nav-item">
+					<a class="nav-link" href="ctf.html">CTF</a>
 				</li>
-				<li>
-					<a href="links.html">Resources</a>
+				<li class="nav-item">
+					<a class="nav-link" href="links.html">Resources</a>
 				</li>
-				<li>
-					<a href="calendar.html">Calendar</a>
+				<li class="nav-item">
+					<a class="nav-link" href="team.html">Staff</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="calendar.html">Calendar</a>
 				</li>
 			</ul>
 		</nav>
@@ -83,8 +86,36 @@
 				on
 				social media or by email.</p>
 
+			<h2>>Discord --help</h2>
+			<p>Embed here</p>
+
+			<h2>>JonBot --start</h2>
+			<p>Talk to the famous Jon Bot below! He can tell you information about the site, and direct you to helpful
+				resources.</p>
+			<div class="chatbot">
+				<div class="jonbox">
+					<img class="jon" title="Jon Bot" src="./media/images/JonBot.gif" width="350" style="image-rendering: pixelated">
+				</div>
+				<div class="chat">
+					<div class="messages" id="messages">
+					</div>
+					<div class="form">
+						<input title="Input" id="inputBox" placeholder="Type your message">
+						<button title="Send" class="form-submit" onclick="sendMessage()">⮞
+						</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</article>
+
+	<!--Join button-->
+	<div onclick="window.location.href='https://discord.com/invite/wn4T3byxh4';" class="join-us">
+		Join Us!
+	</div>
+
+	<!--Script for bot-->
+	<script src="scripts/bot.js"></script>
 </body>
 
 <!--- Footer (used for all pages on the website) -->
