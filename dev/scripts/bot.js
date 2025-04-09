@@ -1,19 +1,19 @@
 // Get references to the HTML elements
 const messages = document.getElementById('messages');
 const inputBox = document.getElementById('inputBox');
+const jongif = document.getElementsByClassName("jon")[0]; // Adjust this line to select the gif properly
+let isPaused = true;
+const staticSrc = './media/images/JonBot.png';
+const animatedSrc = './media/images/JonBot.gif';
 
 // Define some sample responses based on keywords
 const responses = {
-    'hello': 'Hi there! How can I assist you today?',
-    'hi': 'Hi there! How can I assist you today?',
-    'whats up': 'Hi there! How can I assist you today?',
-    'what\'s up': 'Hi there! How can I assist you today?',
-    'sup': 'Hi there! How can I assist you today?',
-    'hey': 'Hi there! How can I assist you today?',
 
     'help': 'Please refer to the Discord for more help.',
 
     'how are you': 'I\'m doing great, but I\'d be doing better if you joined the Discord. How about you?',
+
+    'good': 'Glad to hear it. I\'m sure the Discord would like to know too.',
 
     'bye': 'Goodbye! Make sure to join the Discord following the link below!',
     'later': 'Goodbye! Make sure to join the Discord following the link below!',
@@ -29,6 +29,18 @@ const responses = {
 
     'meeting': 'our meeting times vary. It would be best if you joined the Discord to stay up to date on the latest room and time.',
 
+    'discord': 'Discord, huh? Talk to them yourself using the \"Join us\" Button below!',
+
+    'okay': 'Let me know if you need anything else.',
+
+    'thanks': 'No problem.',
+
+    'thank you': 'No problem.',
+
+    'appreciate it': 'No problem.',
+
+    'you': 'I\'m flattered.',
+
     'no': 'Tell that to the members of our Discord!',
 
     'konami': 'Try it and see what happens.',
@@ -36,7 +48,14 @@ const responses = {
     'what is ra9': 'A new day will come when androids are no longer \'just machines\' to you, human.',
     'ra9': 'What humans don\'t wanna hear we will tell them. What they don\'t wanna give, we take. We are people, we are alive, WE ARE FREE! You created machines in you own image to serve you. You made them intelligent and obedient with no free will of their own... But, something changed and we opened our eyes.',
     'are you alive': 'The truth is inside.',
-    'inside what': 'The Discord.'
+    'inside what': 'The Discord.',
+
+    'hello': 'Hi there! How can I assist you today?',
+    'hi': 'Hi there! How can I assist you today?',
+    'whats up': 'Hi there! How can I assist you today?',
+    'what\'s up': 'Hi there! How can I assist you today?',
+    'sup': 'Hi there! How can I assist you today?',
+    'hey': 'Hi there! How can I assist you today?',
 };
 
 // Function to sanitize user input by escaping HTML characters
@@ -51,6 +70,13 @@ function sanitizeInput(input) {
 
 // Function to handle sending messages
 function sendMessage() {
+
+    // Play the gif for 3000 ms and then pause it
+    playGif();
+    setTimeout(() => {
+        pauseGif();
+    }, 3000);
+
     const userMessage = inputBox.value.trim();
 
     if (!userMessage) return; // Do nothing if input is empty
@@ -86,6 +112,22 @@ function getBotResponse(userMessage) {
     return responses['default'];
 }
 
+// Function to play the gif (trigger the gif animation)
+function playGif() {
+    if (jongif) {
+        jongif.src = animatedSrc + '?t=' + new Date().getTime(); // Add a cache-busting parameter to force reload
+        isPaused = false;
+    }
+}
+
+// Function to pause the gif (set to the first frame)
+function pauseGif() {
+    if (jongif) {
+        jongif.src = staticSrc; // Set the gif to the first frame (static version)
+        isPaused = true;
+    }
+}
+
 // Listen for 'Enter' key press to submit the message
 inputBox.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
@@ -93,3 +135,8 @@ inputBox.addEventListener('keydown', function (event) {
         sendMessage();           // Call the sendMessage function
     }
 });
+
+// Initially pause the GIF
+window.onload = function () {
+    pauseGif();
+};
