@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Calendar | UOSec</title>
-	<link rel="shortcut icon" href="media/images/uoseclogo_dark_icon.png"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The official website of the University of Oregon Cybersecurity Club">
+	<meta name="keywords" content="University, of, Oregon, Cybersecurity, Club, UO, cyber, security, clubs, ctf">
+	<meta name="google-site-verification" content="Ykx8mQAHi4WhIP6vn9zxa6az8s_-HGDF5lAEs9fTf4Y" />
+	<title>Calendar | University of Oregon Cybersecurity Club</title>
+	<link rel="shortcut icon" href="media/images/uoseclogo.svg" />
 	<link href="styles/styles.css" rel="stylesheet">
+	<script src="scripts/bg.js"></script>
 </head>
+
 <body>
-
-<!-- Top Bar
-<div class="top-bar"></div>
--->
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="index.html"><img src="media/images/uoseclogo_dark.png" alt="Logo" title="Logo" /></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
+	<!-- Head -->
+	<div class="nav-bar">
+		<nav>
+			<ul class="navbar">
+				<img class="corner-logo" src="media/images/uoseclogo.svg">
 				<li class="nav-item">
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
@@ -37,48 +29,58 @@
 				<li class="nav-item">
 					<a class="nav-link" href="links.html">Resources</a>
 				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Calendar</a>
+				<li class="nav-item">
+					<a class="nav-link" href="team.html">Staff</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="calendar.html">Calendar</a>
 				</li>
 			</ul>
-		</div>
+		</nav>
 	</div>
-</nav>
+	<!--End head------------------------------------------------------------------>
 
-<div class="container padding">
-  <div class="card border-0 shadow my-5">
-    <div class="card-body p-5">
-			<div class="cotainer-fluid padding">
-				<div class="row text-center padding">
-					<div class="col-12">
-						<h2>UOSec Calendar</h2>
-						<hr>
+	<article>
+		<canvas id="parallaxCanvas"></canvas>
 
-						<!-- When making calendar events, make sure the visibility is "Public" -->
-						<p>We meet in the Allan Price Science Library, with additional information about the room and time to be posted during the school year. See the embedded Google Calendar below for schedule changes or special events.</p>
-					</div>
-				</div>
-			</div>
-			<br />
-	 	   	<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=UOSec%20Calendar&showNav=1&showPrint=0&showCalendars=0&src=dW9jeWJlcmluZm9AZ21haWwuY29t&src=MHFpMTVwcWNlMHBibzNyamhlcHU2ZXJicHJlbDhxM3BAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%234285F4" style="border:solid 1px #777" width="800" height="400" frameborder="0" scrolling="no"></iframe>
+		<div class="content">
+			<h1 class="title">EVENT CALENDAR</h1>
+
+			<!-- When making calendar events, make sure the visibility is "Public" -->
+			<p>
+				We meet in the Allan Price Science Library, with the time and room varying per term. Check the calendar
+				below for schedule changes or special events.
+			</p>
+			<br>
+			<iframe class="calendar"
+				src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=UOSec%20Calendar&showNav=1&showPrint=0&showCalendars=0&src=dW9jeWJlcmluZm9AZ21haWwuY29t&src=MHFpMTVwcWNlMHBibzNyamhlcHU2ZXJicHJlbDhxM3BAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%234285F4"
+				style="border:solid 5px #9FA1A3" frameborder="0" scrolling="no">
+			</iframe>
 		</div>
-  </div>
-</div>
+	</article>
 
-<!--- Footer (used for all pages on the website)
-- may want to move social media here, add meeting times
-and location, email address, (and other links?) -->
+	<!--Join button-->
+	<div onclick="window.location.href='https://discord.com/invite/wn4T3byxh4';" class="join-us">
+		Join Us!
+	</div>
+</body>
+
+<!--- Footer (used for all pages on the website) -->
 <footer>
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<div class="col-12">
-				<p>
-					&copy; UOSec 2025
-				</p>
-			</div>
-		</div>
+	<div class="social-icons">
+		<a href="https://www.instagram.com/uo_sec/">
+			<img class="icon-1" src="media/images/ig-icon.svg">
+		</a>
+		<a href="https://discord.com/invite/wn4T3byxh4">
+			<img class="icon-2" src="media/images/discord-icon.svg">
+		</a>
+		<a href="mailto:uosecurityclub@uoregon.edu">
+			<img class="icon-3" src="media/images/mail-icon.svg">
+		</a>
 	</div>
+	<p>
+		&copy; UOSEC 2025
+	</p>
 </footer>
 
-</body>
 </html>

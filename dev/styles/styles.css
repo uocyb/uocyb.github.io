@@ -180,13 +180,13 @@ nav a:hover {
 @media(max-width: 600px) {
 
   nav ul {
-    font-size: 15px;
+    font-size: 13px;
     align-items: center;
     padding: 0;
   }
 
   nav ul a {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 7px 0px 7px;
     font-weight: bold;
   }
 }
@@ -209,7 +209,7 @@ nav a:hover {
 
 @media(max-width: 600px) {
   .content {
-    max-width: 600px;
+    max-width: 360px;
     padding: 15px;
     padding-bottom: 25px;
     margin-top: 50px;
@@ -646,6 +646,7 @@ summary {
   margin: 20px;
   padding: 20px;
   justify-self: center;
+  justify-items: center;
 }
 
 .jonbox {
@@ -716,7 +717,7 @@ summary {
 
 @media(max-width:900px) {
   .chatbot {
-    width: 600px;
+    width: 630px;
   }
 
   .chat {
@@ -730,7 +731,7 @@ summary {
 
 @media(max-width:600px) {
   .chatbot {
-    width: 400px;
+    width: 320px;
     height: auto;
     display: block;
 
