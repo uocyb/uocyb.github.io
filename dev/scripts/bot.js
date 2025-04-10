@@ -11,7 +11,7 @@ const responses = {
 
     'help': 'Please refer to the Discord for more help.',
 
-    'how are you': 'I\'m doing great, but I\'d be doing better if you joined the Discord. How about you?',
+    'how are you': 'I\'m persisting, but I\'d be doing better if you joined the Discord. How about you?',
 
     'good': 'Glad to hear it. I\'m sure the Discord would like to know too.',
 
