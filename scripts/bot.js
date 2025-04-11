@@ -39,11 +39,18 @@ const responses = {
 
     'appreciate it': 'No problem.',
 
+    'kill': 'I\'m going to report you to the Discord now.',
+
     'you': 'I\'m flattered.',
 
     'no': 'Tell that to the members of our Discord!',
 
     'konami': 'Try it and see what happens.',
+
+    '1=1': 'Nice try.',
+    '\'\'': 'Nice try.',
+    '\'': 'Nice try.',
+    '\'\' OR 1=1': 'Really nice try! So you know some SQL. Cut that immediately.',
 
     'what is ra9': 'A new day will come when androids are no longer \'just machines\' to you, human.',
     'ra9': 'What humans don\'t wanna hear we will tell them. What they don\'t wanna give, we take. We are people, we are alive, WE ARE FREE! You created machines in you own image to serve you. You made them intelligent and obedient with no free will of their own... But, something changed and we opened our eyes.',
