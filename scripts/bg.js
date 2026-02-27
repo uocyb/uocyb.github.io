@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function animate() {
         // Set background color
-        ctx.fillStyle = "#363B49";  // Use the same color as the body background
+        ctx.fillStyle = "#535a6e;";  // Use the same color as the body background
         ctx.fillRect(0, 0, canvas.width, canvas.height);  // Fill entire canvas
 
         bars.forEach(bar => {

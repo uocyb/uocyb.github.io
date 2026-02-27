@@ -1,110 +1,93 @@
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("parallaxCanvas");
-    if (!canvas) {
-        console.error("Canvas element not found.");
-        return;
-    }
-
     const ctx = canvas.getContext("2d");
 
-    // Set initial canvas size
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    let DPR = window.devicePixelRatio || 1;
 
-    const bars = [];
+    function resizeCanvas() {
+        canvas.width = window.innerWidth * DPR;
+        canvas.height = window.innerHeight * DPR;
+        canvas.style.width = window.innerWidth + "px";
+        canvas.style.height = window.innerHeight + "px";
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.scale(DPR, DPR);
+    }
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
 
-    class Bar {
-        constructor(x, width, speed, opacitySpeed) {
+    class BlobColumn {
+        constructor(x) {
             this.x = x;
-            this.width = width;
-            this.y = Math.random() * canvas.height;
-            this.height = 500;
-            this.speed = speed;
-            this.opacity = Math.random();
-            this.opacitySpeed = opacitySpeed;
-            this.scale = 1;
-            this.pulseSpeed = Math.random() * 0.002 + 0.001; // Slow pulse effect
+            this.y = Math.random() * canvas.height / DPR;
+            this.width = 200 + Math.random() * 50; // ~250px wide columns
+            this.height = 40 + Math.random() * 60;
+            this.speed = 1 + Math.random() * 1.5; // downward speed
+            this.opacity = 0.05 + Math.random() * 0.05;
         }
 
         update() {
             this.y += this.speed;
-            if (this.y > canvas.height) {
+            if (this.y - this.height > window.innerHeight) {
                 this.y = -this.height;
-                this.opacity = Math.random();
             }
-
-            // Fade in/out effect
-            this.opacity += this.opacitySpeed;
-            if (this.opacity >= 1 || this.opacity <= 0.2) {
-                this.opacitySpeed *= -1;
-            }
-
-            // Slow pulse effect
-            this.scale = 1 + Math.sin(Date.now() * this.pulseSpeed) * 0.1;
         }
 
         draw() {
-            ctx.fillStyle = `rgba(255, 191, 58, ${this.opacity})`;
-            ctx.fillRect(this.x, this.y, this.width * this.scale, this.height * this.scale);
+            ctx.save();
+            ctx.globalAlpha = this.opacity;
+            ctx.shadowColor = "rgba(255, 255, 50, 0.8)";
+            ctx.shadowBlur = 50;
+            ctx.fillStyle = "rgba(255, 255, 50, 0.2)";
+            ctx.fillRect(this.x, this.y, this.width, this.height);
+            ctx.restore();
         }
     }
 
-    function initBars() {
-        const barCount = Math.floor(canvas.width / 5); // Adjust bar count based on screen size
-        for (let i = 0; i < barCount; i++) {
-            const x = i * (canvas.width / barCount);
-            const width = Math.random() * 2;
-            const speed = Math.random() * 2 + 0.5;
-            const opacitySpeed = Math.random() * 0.02 - 0.01;
-            bars.push(new Bar(x, width, speed, opacitySpeed));
-        }
+    const columns = [];
+    const COLUMN_SPACING = 220; // roughly 250px per column
+    for (let x = 0; x < window.innerWidth; x += COLUMN_SPACING) {
+        columns.push(new BlobColumn(x));
     }
 
     function animate() {
-        // Set background color
-        ctx.fillStyle = "#363B49";  // Use the same color as the body background
-        ctx.fillRect(0, 0, canvas.width, canvas.height);  // Fill entire canvas
+        ctx.clearRect(0, 0, canvas.width / DPR, canvas.height / DPR);
 
-        bars.forEach(bar => {
-            bar.update();
-            bar.draw();
+        // dark background
+        ctx.fillStyle = "#3f434d";
+        ctx.fillRect(0, 0, canvas.width / DPR, canvas.height / DPR);
+
+        ctx.globalCompositeOperation = "lighter";
+
+        columns.forEach(col => {
+            col.update();
+            col.draw();
         });
+
+        ctx.globalCompositeOperation = "source-over";
 
         requestAnimationFrame(animate);
     }
 
-    initBars();
     animate();
 
-    // Ensure canvas always matches the size of the window
-    window.addEventListener("resize", () => {
-        // Update canvas size on window resize
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+    //Something
+    let Code = [
+        'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'
+    ];
 
-        // Reinitialize bars to fit new canvas size
-        bars.length = 0;
-        initBars();
-    });
-});
+    let Index = 0;
 
-//Something
-let Code = [
-    'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'
-];
-
-let Index = 0;
-
-// Listen for keydown events
-document.addEventListener('keydown', (e) => {
-    if (e.key === Code[Index]) {
-        Index++;
-        if (Index === Code.length) {
-            // Trigger
-            window.location.href = "bird.html"
-            Index = 0; // Reset
+    // Listen for keydown events
+    document.addEventListener('keydown', (e) => {
+        if (e.key === Code[Index]) {
+            Index++;
+            if (Index === Code.length) {
+                // Trigger
+                window.location.href = "bird.html"
+                Index = 0; // Reset
+            }
+        } else {
+            Index = 0; // Reset upon wrong key
         }
-    } else {
-        Index = 0; // Reset upon wrong key
-    }
+    })
 });
