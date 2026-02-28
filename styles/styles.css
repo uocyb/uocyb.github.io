@@ -666,7 +666,7 @@ summary {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 4fr);
+  grid-template-columns: repeat(3, 3fr);
   margin: 50px;
   display: grid;
   justify-self: center;
