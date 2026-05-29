@@ -13,6 +13,11 @@ const responses = {
 
     'how are you': 'I\'m persisting, but I\'d be doing better if you joined the Discord. How about you?',
 
+    'who are you': 'I\'m JonBot, an extremely sentient AI created by the Cybersecurity Club through sheer willpower.',
+    'what are you': 'I\'m JonBot, an extremely sentient AI created by the Cybersecurity Club through sheer willpower.',
+
+    'who made you': 'JD is my father.',
+
     'good': 'Glad to hear it. I\'m sure the Discord would like to know too.',
 
     'bye': 'Goodbye! Make sure to join the Discord following the link below!',
@@ -27,6 +32,11 @@ const responses = {
     'ctf': 'CTFs are hacking competitions put on in different locations around the world and online. Our club trains our members with the goal of competing. If you\'d like more information, please refer to our ctf page.',
     'capture the flag': 'CTFs are hacking competitions put on in different locations around the world and online. Our club trains our members with the goal of competing. If you\'d like more information, please refer to our ctf page.',
 
+    'pick': 'We occasionally have locks to pick at the club meetings!',
+    'picking': 'We occasionally have locks to pick at the club meetings!',
+    'lock': 'We occasionally have locks to pick at the club meetings!',
+    'lockpicking': 'We occasionally have locks to pick at the club meetings!',
+
     'meeting': 'our meeting times vary. It would be best if you joined the Discord to stay up to date on the latest room and time.',
 
     'discord': 'Discord, huh? Talk to them yourself using the \"Join us\" Button below!',
@@ -39,9 +49,7 @@ const responses = {
 
     'appreciate it': 'No problem.',
 
-    'kill': 'I\'m going to report you to the Discord now.',
-
-    'you': 'I\'m flattered.',
+    'kill': 'Hey, that sounds violent! I\'m going to report you to the Discord now.',
 
     'no': 'Tell that to the members of our Discord!',
 
@@ -63,6 +71,12 @@ const responses = {
     'what\'s up': 'Hi there! How can I assist you today?',
     'sup': 'Hi there! How can I assist you today?',
     'hey': 'Hi there! How can I assist you today?',
+
+    'jd': 'JD is a Web Developer, Designer, and Artist. You can reach him at jdsmithartwork.com!',
+
+    'secret': 'KONAMI',
+
+    'hal': 'I\'m sorry, Dave. I\'m afraid I can\'t do that.'
 };
 
 // Function to sanitize user input by escaping HTML characters
