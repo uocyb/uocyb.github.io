@@ -87,7 +87,7 @@
 }
 
 body {
-  background: #363B49;
+  background: #154733;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -133,7 +133,7 @@ article {
 .nav-bar {
   width: 100%;
   position: fixed;
-  background-color: #363B49;
+  background-color: #154733;
   top: 0;
   left: 0;
   z-index: 1;
@@ -177,7 +177,7 @@ nav ul a {
 }
 
 nav a:hover {
-  color: rgb(255, 217, 0);
+  color: #FEE123;
 }
 
 @media(max-width: 600px) {
@@ -221,7 +221,7 @@ nav a:hover {
 
 .banner {
   border: solid 5px #B5B4B4;
-  border-bottom: solid 10px #B5B4B4;
+  border-bottom: solid 10px #154733;
   padding: 25px 15px 25px 15px;
   text-align: center;
 }
@@ -278,6 +278,7 @@ h2 {
   font-family: Red Hat Mono;
   font-weight: 600;
   font-size: 20pt;
+  color: #154733;
 }
 
 p {
@@ -439,7 +440,8 @@ iframe {
   text-align: center;
   font-size: 20px;
   user-select: none;
-  background-color: white;
+  color: #ffffff;
+  background-color: #154733;
   border-radius: 40px;
   box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease, background-color 0.25s ease;
@@ -459,21 +461,21 @@ iframe {
     height: 90px;
     right: 40px;
     border-radius: 50px;
-    border: solid 2px #535a6e;
+    border: solid 2px #FEE123;
   }
 }
 
 
 .join-us:hover {
   transform: translateY(-3px);
-  background-color: #e9e9e9;
+  background-color: #0e3624;
   cursor: pointer;
   font-weight: 900;
 }
 
 .join-us a {
   text-decoration: none;
-  color: #222;
+  color: #ffffff;
 }
 
 footer {
@@ -482,7 +484,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #363B49;
+  background-color: #154733;
   color: white;
   padding: 15px 0px 15px 0px;
   margin: 0;
@@ -513,6 +515,7 @@ footer .icon-3 {
   font-size: 50px;
   justify-self: center;
   text-align: center;
+  color: #154733;
 }
 
 .dropdown-parent {
@@ -535,6 +538,7 @@ details h2 {
   font-family: United Sans;
   font-weight: 800;
   margin: 5px auto;
+  color: #1a1a1a;
 }
 
 summary {
@@ -551,27 +555,27 @@ summary {
 }
 
 .dropdown-1 {
-  background-color: #8A98B7;
+  background-color: #A8C5B4;
 }
 
 .dropdown-1[open] {
-  background-color: #8A98B7;
+  background-color: #A8C5B4;
 }
 
 .dropdown-2 {
-  background-color: #8A8CB5;
+  background-color: #95BAA6;
 }
 
 .dropdown-3 {
-  background-color: #AF8AB5;
+  background-color: #82B098;
 }
 
 .dropdown-4 {
-  background-color: #B58AA0;
+  background-color: #6FA68A;
 }
 
 .dropdown-5 {
-  background-color: #B58A8A;
+  background-color: #5C9B7C;
 }
 
 .dropdown-content {
@@ -629,7 +633,7 @@ summary {
 }
 
 .resources-parent a {
-  color: #222;
+  color: #154733;
   transition: color 0.15s ease, font-weight 0.15s ease;
 }
 
@@ -640,13 +644,13 @@ summary {
 .resources-1,
 .resources-2,
 .resources-3 {
-  background-color: #AEBDCE;
+  background-color: #B9CFC2;
 }
 
 .resources-4,
 .resources-5,
 .resources-6 {
-  background-color: #85A3C1;
+  background-color: #8FB3A0;
 }
 
 @media(max-width: 600px) {
@@ -799,7 +803,7 @@ summary {
   height: 50px;
   margin: 0;
   padding: 0;
-  color: #363B49;
+  color: #154733;
   font-family: Open Sans;
   font-size: 30px;
   border-radius: 50px;
