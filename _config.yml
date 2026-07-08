@@ -8,6 +8,9 @@ permalink: /blog/:year/:month/:day/:title/
 
 # Show newest posts first on the blog index
 paginate: 10
+paginate_path: /blog/page:num/
+plugins:
+  - jekyll-paginate
 
 # Custom layouts in _layouts/ provide the club's look — no external theme.
 # The hand-written static pages (index.html, ctf.html, etc.) have no front

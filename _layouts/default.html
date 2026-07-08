@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="{{ page.description | default: site.description }}">
 	<title>{% if page.title %}{{ page.title }} | {% endif %}University of Oregon Cybersecurity Club</title>
-	<link rel="shortcut icon" href="/media/images/uoseclogo.svg" />
-	<link href="/styles/styles.css" rel="stylesheet">
-	<script src="/scripts/bg.js"></script>
+	<link rel="shortcut icon" href="{{ '/media/images/uoseclogo.svg' | relative_url }}" />
+	<link href="{{ '/styles/styles.css' | relative_url }}" rel="stylesheet">
+	<script src="{{ '/scripts/bg.js' | relative_url }}"></script>
 </head>
 
 <body>
@@ -17,24 +17,24 @@
 	<div class="nav-bar">
 		<nav>
 			<ul class="navbar">
-				<img class="corner-logo" src="/media/images/uoseclogo.svg">
+				<img class="corner-logo" src="{{ '/media/images/uoseclogo.svg' | relative_url }}">
 				<li class="nav-item">
-					<a class="nav-link" href="/index.html">Home</a>
+					<a class="nav-link" href="{{ '/index.html' | relative_url }}">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/ctf.html">CTF</a>
+					<a class="nav-link" href="{{ '/ctf.html' | relative_url }}">CTF</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/links.html">Resources</a>
+					<a class="nav-link" href="{{ '/links.html' | relative_url }}">Resources</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/team.html">Staff</a>
+					<a class="nav-link" href="{{ '/team.html' | relative_url }}">Staff</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/calendar.html">Calendar</a>
+					<a class="nav-link" href="{{ '/calendar.html' | relative_url }}">Calendar</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="/blog.html">Blog</a>
+					<a class="nav-link" href="{{ '/blog/' | relative_url }}">Blog</a>
 				</li>
 			</ul>
 		</nav>
@@ -52,13 +52,13 @@
 	<footer>
 		<div class="social-icons">
 			<a href="https://www.instagram.com/uo_sec/">
-				<img class="icon-1" src="/media/images/ig-icon.svg">
+				<img class="icon-1" src="{{ '/media/images/ig-icon.svg' | relative_url }}">
 			</a>
 			<a href="https://discord.com/invite/wn4T3byxh4">
-				<img class="icon-2" src="/media/images/discord-icon.svg">
+				<img class="icon-2" src="{{ '/media/images/discord-icon.svg' | relative_url }}">
 			</a>
 			<a href="mailto:uosecurityclub@uoregon.edu">
-				<img class="icon-3" src="/media/images/mail-icon.svg">
+				<img class="icon-3" src="{{ '/media/images/mail-icon.svg' | relative_url }}">
 			</a>
 		</div>
 		<p>

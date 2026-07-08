@@ -7,15 +7,27 @@ description: Meeting recaps, event write-ups, and announcements from the UO Cybe
 <p style="text-align:center;">Meeting recaps, event write-ups, and announcements from the UO Cybersecurity Club.</p>
 
 <div class="post-list">
-	{% for post in site.posts %}
-	<a class="post-card" href="{{ post.url }}">
+	{% for post in paginator.posts %}
+	<a class="post-card" href="{{ post.url | relative_url }}">
 		<span class="post-card-date">{{ post.date | date: "%b %-d, %Y" }}</span>
 		<span class="post-card-title">{{ post.title }}</span>
 		{% if post.description %}<span class="post-card-excerpt">{{ post.description }}</span>{% endif %}
 	</a>
 	{% endfor %}
 
-	{% if site.posts.size == 0 %}
+	{% if paginator.posts.size == 0 %}
 	<p style="text-align:center; margin-top:30px;">No posts yet &mdash; check back soon!</p>
 	{% endif %}
 </div>
+
+{% if paginator.total_pages > 1 %}
+<p class="post-back">
+	{% if paginator.previous_page %}
+	<a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer posts</a>
+	{% endif %}
+	{% if paginator.previous_page and paginator.next_page %}&nbsp;&middot;&nbsp;{% endif %}
+	{% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path | relative_url }}">Older posts &rarr;</a>
+	{% endif %}
+</p>
+{% endif %}
