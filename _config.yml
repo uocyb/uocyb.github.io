@@ -1,1 +1,16 @@
-theme: jekyll-theme-cayman
+# University of Oregon Cybersecurity Club — site + blog config
+title: University of Oregon Cybersecurity Club
+description: News, meeting recaps, and event updates from the UO Cybersecurity Club.
+url: "https://uosec.org"
+
+# Blog posts live under /blog/YYYY/MM/DD/title/
+permalink: /blog/:year/:month/:day/:title/
+
+# Show newest posts first on the blog index
+paginate: 10
+
+# Custom layouts in _layouts/ provide the club's look — no external theme.
+# The hand-written static pages (index.html, ctf.html, etc.) have no front
+# matter, so Jekyll copies them through untouched.
+exclude:
+  - README.md

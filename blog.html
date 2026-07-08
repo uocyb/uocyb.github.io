@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+description: Meeting recaps, event write-ups, and announcements from the UO Cybersecurity Club.
+---
+<div class="title">CLUB BLOG</div>
+<p style="text-align:center;">Meeting recaps, event write-ups, and announcements from the UO Cybersecurity Club.</p>
+
+<div class="post-list">
+	{% for post in site.posts %}
+	<a class="post-card" href="{{ post.url }}">
+		<span class="post-card-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+		<span class="post-card-title">{{ post.title }}</span>
+		{% if post.description %}<span class="post-card-excerpt">{{ post.description }}</span>{% endif %}
+	</a>
+	{% endfor %}
+
+	{% if site.posts.size == 0 %}
+	<p style="text-align:center; margin-top:30px;">No posts yet &mdash; check back soon!</p>
+	{% endif %}
+</div>
