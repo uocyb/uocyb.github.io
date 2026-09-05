@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Upcoming meetings, CTF competitions, summits, and events for the University of Oregon Cybersecurity Club.">
+	<meta name="description" content="Fall 2026 schedule for the University of Oregon Cybersecurity Club — Thursday public club, Tuesday competitive track, and term initiatives.">
 	<meta name="keywords" content="University, of, Oregon, Cybersecurity, Club, UO, cyber, security, clubs, ctf">
 	<meta name="google-site-verification" content="Ykx8mQAHi4WhIP6vn9zxa6az8s_-HGDF5lAEs9fTf4Y" />
 	<title>Calendar | University of Oregon Cybersecurity Club</title>
@@ -19,7 +19,7 @@
 	<div class="nav-bar">
 		<nav>
 			<ul class="navbar">
-				<img class="corner-logo" src="media/images/uoseclogo.svg">
+				<img class="corner-logo" src="media/images/uoseclogo.svg" alt="UOSEC logo">
 				<li class="nav-item">
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
@@ -47,18 +47,219 @@
 		<canvas id="parallaxCanvas"></canvas>
 
 		<div class="content">
-			<h1 class="title">EVENT CALENDAR</h1>
+			<h1 class="title">FALL 2026 SCHEDULE</h1>
 
-			<!-- When making calendar events, make sure the visibility is "Public" -->
-			<p>
-				We meet in the Allan Price Science Library, with the time and room varying per term. Check the calendar
-				below for schedule changes or special events.
+			<p class="schedule-lede">
+				Two tracks, one club — and they are <em>not</em> two equal prepared talks.
+				<strong>Thursday</strong> is public club in PSC B040, 5:45–6:45 PM (Brief, wins, calendar, topic).
+				<strong>Tuesday</strong> is competitive Discord voice + screenshare: reps, not a second lecture.
+				No Tuesday clock time is published yet. Specials never cancel Tuesdays.
 			</p>
-			<br>
-			<iframe class="calendar"
-				src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=UOSec%20Calendar&showNav=1&showPrint=0&showCalendars=0&src=dW9jeWJlcmluZm9AZ21haWwuY29t&src=MHFpMTVwcWNlMHBibzNyamhlcHU2ZXJicHJlbDhxM3BAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%234285F4"
-				style="border:solid 5px #154733" frameborder="0" scrolling="no">
-			</iframe>
+			<p class="schedule-footnote">Working fall plan. Names marked ⚠️ are not locked. Ask in Discord before treating any row as announced.</p>
+
+			<div class="schedule-legend" aria-label="Schedule legend">
+				<span class="pill pill-public">Thursday</span>
+				<span class="pill pill-comp">Tuesday</span>
+				<span class="pill pill-special">Initiative</span>
+				<span class="pill pill-warn">Unconfirmed owner</span>
+			</div>
+
+			<section class="initiatives" aria-labelledby="initiatives-heading">
+				<h2 id="initiatives-heading">&gt; term-initiatives</h2>
+				<p class="section-note">Once-per-term events on top of the weekly grid. Fall-at-a-glance — not a flyer.</p>
+				<div class="initiative-grid">
+					<article class="initiative-card">
+						<div class="initiative-date">Wed Oct 7</div>
+						<h3>OCRS</h3>
+						<p>Oregon Cybersecurity Roundtable Summit (EMU). Conference invite pattern — not a club Zoom.</p>
+					</article>
+					<article class="initiative-card">
+						<div class="initiative-date">Thu Oct 22 · Fri–Sat Oct 23–24</div>
+						<h3>BSidesPDX</h3>
+						<p>Club prep in B040 on Oct 22, then the Portland conference trip.</p>
+					</article>
+					<article class="initiative-card">
+						<div class="initiative-date">Thu Nov 12</div>
+						<h3>SentinelOne Summit</h3>
+						<p>Thursday only. No Tuesday impact.</p>
+					</article>
+					<article class="initiative-card initiative-card-muted">
+						<div class="initiative-date">Fall · unpublished</div>
+						<h3>Collab CTF</h3>
+						<p>Only if another school hosts. Not announced. Not a UO-hosted CTF week.</p>
+					</article>
+				</div>
+				<p class="schedule-footnote">No HTB week this fall — the club is not ready to host that format.</p>
+			</section>
+
+			<section class="tracks" aria-labelledby="tracks-heading">
+				<h2 id="tracks-heading">&gt; weekly-tracks</h2>
+				<div class="track-columns">
+					<div class="track-col track-thu">
+						<header class="track-header">
+							<span class="pill pill-public">Thursday · public</span>
+							<p>PSC B040 · 5:45–6:45 · Brief, wins, calendar, topic</p>
+						</header>
+						<ol class="session-list">
+							<li>
+								<div class="session-when">Oct 1</div>
+								<div class="session-body">
+									<strong>Kickoff + Build Your Own Home Lab</strong>
+									<span class="owner">Nate <abbr title="Owner not yet confirmed">⚠️</abbr></span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Oct 8</div>
+								<div class="session-body">
+									<strong>Docker Security</strong>
+									<span class="owner">Guest, Zoom · <abbr title="Guest not yet asked">⚠️ unasked</abbr></span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Oct 15</div>
+								<div class="session-body">
+									<strong>Lock Picking / Physical Security</strong>
+									<span class="owner">Jamie</span>
+								</div>
+							</li>
+							<li class="session-special">
+								<div class="session-when">Oct 22</div>
+								<div class="session-body">
+									<strong>BSidesPDX Prep</strong>
+									<span class="owner">Justice · in B040</span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Oct 29</div>
+								<div class="session-body">
+									<strong>Atomic Red Team</strong>
+									<span class="owner"><abbr title="Owner not yet confirmed">⚠️</abbr></span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Nov 5</div>
+								<div class="session-body">
+									<strong>Inviting Day — privacy / invisible online</strong>
+									<span class="owner">Justice + Darwin</span>
+								</div>
+							</li>
+							<li class="session-special">
+								<div class="session-when">Nov 12</div>
+								<div class="session-body">
+									<strong>SentinelOne Summit</strong>
+									<span class="owner">Initiative week</span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Nov 19</div>
+								<div class="session-body">
+									<strong>Normal club week</strong>
+									<span class="owner">Topic TBD · no HTB week</span>
+								</div>
+							</li>
+							<li class="session-off">
+								<div class="session-when">Nov 26</div>
+								<div class="session-body">
+									<strong>No meeting</strong>
+									<span class="owner">Thanksgiving</span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Dec 3</div>
+								<div class="session-body">
+									<strong>Wrap &amp; Winter Preview</strong>
+									<span class="owner">Justice</span>
+								</div>
+							</li>
+						</ol>
+					</div>
+
+					<div class="track-col track-tue">
+						<header class="track-header">
+							<span class="pill pill-comp">Tuesday · competitive</span>
+							<p>Discord · voice + screenshare · practice cadence · no clock time published · ⚠️ topics tentative</p>
+						</header>
+						<ol class="session-list">
+							<li>
+								<div class="session-when">Oct 6</div>
+								<div class="session-body">
+									<strong>Pwn Foundations I</strong>
+									<span class="owner">Jamie <abbr title="Awaiting Sep 21 confirm">⚠️</abbr></span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Oct 13</div>
+								<div class="session-body">
+									<strong>OSINT / Geoguessr</strong>
+									<span class="owner">Justice</span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Oct 20</div>
+								<div class="session-body">
+									<strong>Lane draft + drill</strong>
+									<span class="owner">Justice + Jamie</span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Oct 27</div>
+								<div class="session-body">
+									<strong>Pwn Foundations II</strong>
+									<span class="owner">Jamie <abbr title="Awaiting Sep 21 confirm">⚠️</abbr></span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Nov 3</div>
+								<div class="session-body">
+									<strong>Wireshark / net forensics</strong>
+									<span class="owner">Justice + Nate <abbr title="Nate not confirmed">⚠️</abbr></span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Nov 10</div>
+								<div class="session-body">
+									<strong>Pwn Foundations III</strong>
+									<span class="owner">Jamie <abbr title="Awaiting Sep 21 confirm">⚠️</abbr></span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Nov 17</div>
+								<div class="session-body">
+									<strong>Competitive session</strong>
+									<span class="owner">Topic open · not HTB warm-up</span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Nov 24</div>
+								<div class="session-body">
+									<strong>Crypto + stego</strong>
+									<span class="owner">Jamie + Nate <abbr title="Not fully confirmed">⚠️</abbr></span>
+								</div>
+							</li>
+							<li>
+								<div class="session-when">Dec 1</div>
+								<div class="session-body">
+									<strong>Pwn Foundations IV</strong>
+									<span class="owner">Jamie <abbr title="Awaiting Sep 21 confirm">⚠️</abbr></span>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</section>
+
+			<section class="live-calendar" aria-labelledby="live-cal-heading">
+				<h2 id="live-cal-heading">&gt; live-google-calendar</h2>
+				<p class="section-note">
+					The embed below is what the public calendar currently shows. It can lag this page — especially the
+					Tuesday track and title moves. Prefer the Fall 2026 schedule above when they differ.
+				</p>
+				<!-- When making calendar events, make sure the visibility is "Public" -->
+				<iframe class="calendar"
+					src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&title=UOSec%20Calendar&showNav=1&showPrint=0&showCalendars=0&src=dW9jeWJlcmluZm9AZ21haWwuY29t&src=MHFpMTVwcWNlMHBibzNyamhlcHU2ZXJicHJlbDhxM3BAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%234285F4"
+					style="border:solid 5px #154733" title="UOSEC Google Calendar" frameborder="0" scrolling="no">
+				</iframe>
+			</section>
 		</div>
 	</article>
 
@@ -72,13 +273,13 @@
 <footer>
 	<div class="social-icons">
 		<a href="https://www.instagram.com/uo_sec/">
-			<img class="icon-1" src="media/images/ig-icon.svg">
+			<img class="icon-1" src="media/images/ig-icon.svg" alt="Instagram">
 		</a>
 		<a href="https://discord.com/invite/wn4T3byxh4">
-			<img class="icon-2" src="media/images/discord-icon.svg">
+			<img class="icon-2" src="media/images/discord-icon.svg" alt="Discord">
 		</a>
 		<a href="mailto:uosecurityclub@uoregon.edu">
-			<img class="icon-3" src="media/images/mail-icon.svg">
+			<img class="icon-3" src="media/images/mail-icon.svg" alt="Email">
 		</a>
 	</div>
 	<p>

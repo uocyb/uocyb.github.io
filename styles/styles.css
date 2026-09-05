@@ -1014,3 +1014,207 @@ summary {
   color: #154733;
   margin: 0 30px 8px 30px;
 }
+
+
+/* Fall 2026 schedule (calendar page) */
+.schedule-lede {
+  margin: 0 30px 18px 30px;
+  font-size: 15pt;
+  line-height: 1.45;
+}
+
+.schedule-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 15px 20px 15px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  font-family: United Sans;
+  font-weight: 700;
+  font-size: 11pt;
+  letter-spacing: 0.02em;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 2px solid #154733;
+  background: #fff;
+  color: #154733;
+}
+
+.pill-public {
+  background: #154733;
+  color: #FEE123;
+  border-color: #154733;
+}
+
+.pill-comp {
+  background: #FEE123;
+  color: #154733;
+  border-color: #154733;
+}
+
+.pill-special {
+  background: #fff;
+  border-style: dashed;
+}
+
+.pill-warn {
+  border-color: #B5B4B4;
+  color: #555;
+}
+
+.section-note,
+.schedule-footnote {
+  margin: 0 30px 16px 30px;
+  color: #444;
+}
+
+.schedule-footnote {
+  font-size: 12pt;
+  font-style: italic;
+}
+
+.initiative-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  padding: 8px 15px 10px 15px;
+}
+
+.initiative-card {
+  padding: 18px 18px 20px 18px;
+  border: solid 5px #D1D3D4;
+  border-bottom: solid 8px #FEE123;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.initiative-card-muted {
+  border-bottom-color: #B5B4B4;
+  opacity: 0.95;
+}
+
+.initiative-date {
+  font-family: Red Hat Mono;
+  font-size: 11pt;
+  font-weight: 600;
+  color: #154733;
+  margin-bottom: 8px;
+}
+
+.initiative-card h3 {
+  font-family: United Sans;
+  font-weight: 800;
+  font-size: 16pt;
+  margin: 0 0 8px 0;
+  color: #154733;
+}
+
+.initiative-card p {
+  margin: 0;
+  font-size: 13pt;
+}
+
+.track-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  padding: 8px 15px 28px 15px;
+}
+
+.track-col {
+  border: solid 5px #D1D3D4;
+  background: rgba(255, 255, 255, 0.94);
+  overflow: hidden;
+}
+
+.track-thu {
+  border-top: solid 10px #154733;
+}
+
+.track-tue {
+  border-top: solid 10px #FEE123;
+}
+
+.track-header {
+  padding: 16px 18px 12px 18px;
+  border-bottom: solid 3px #E6E7E8;
+}
+
+.track-header p {
+  margin: 10px 0 0 0;
+  font-size: 12pt;
+  color: #444;
+}
+
+.session-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.session-list li {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: solid 1px #E6E7E8;
+}
+
+.session-list li:last-child {
+  border-bottom: none;
+}
+
+.session-special {
+  background: linear-gradient(90deg, rgba(254, 225, 35, 0.28), rgba(255, 255, 255, 0));
+}
+
+.session-off {
+  opacity: 0.72;
+}
+
+.session-when {
+  font-family: Red Hat Mono;
+  font-weight: 700;
+  font-size: 11pt;
+  color: #154733;
+}
+
+.session-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.session-body strong {
+  font-family: United Sans;
+  font-size: 13pt;
+  color: #111;
+}
+
+.session-body .owner {
+  font-size: 11pt;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .track-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .schedule-lede,
+  .section-note,
+  .schedule-footnote {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .session-list li {
+    grid-template-columns: 72px 1fr;
+    padding: 12px;
+  }
+}
