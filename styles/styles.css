@@ -1005,3 +1005,12 @@ summary {
     padding: 16px;
   }
 }
+
+
+.benefits-kicker {
+  font-family: United Sans;
+  font-weight: 800;
+  font-size: 18pt;
+  color: #154733;
+  margin: 0 30px 8px 30px;
+}
