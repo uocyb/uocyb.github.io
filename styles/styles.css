@@ -589,6 +589,7 @@ summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-content: center;
+  align-items: start;
   justify-items: center;
   padding: 20px;
   padding-bottom: 0px;
@@ -622,7 +623,8 @@ summary {
 .resources-5,
 .resources-6 {
   width: 300px;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   margin: 5px;
 }
 
@@ -662,7 +664,8 @@ summary {
   .resources-5,
   .resources-6 {
     width: 275px;
-    height: 285px;
+    min-height: 285px;
+    height: auto;
   }
 }
 
