@@ -201,6 +201,16 @@ nav a:hover {
   padding: 82px;
 }
 
+/* Desktop/laptop default scale (match typical localhost zoomed feel).
+   Most type/layout uses px/pt, so root font-size alone would not enlarge the page.
+   CSS zoom scales the whole layout on Chromium/Safari/Edge; phones/tablets unchanged. */
+@media (min-width: 1024px) {
+  html {
+    zoom: 1.25;
+  }
+}
+
+
 @media(max-width: 800px) {
   .content {
     max-width: 800px;
