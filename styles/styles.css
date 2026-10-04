@@ -695,10 +695,19 @@ summary {
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 325px;
-  justify-content: center;
+  height: auto;
+  min-height: 325px;
+  padding-bottom: 18px;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
+}
+
+.bio {
+  font-size: 14px;
+  line-height: 1.35;
+  max-width: 300px;
+  margin: 2px 8px;
 }
 
 .profile-image {
