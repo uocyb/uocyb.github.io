@@ -911,6 +911,10 @@ summary {
   line-height: 1.6;
 }
 
+.post-content p {
+  margin: 0 0 1em 0;
+}
+
 .post-content ul,
 .post-content ol {
   margin: 0 30px;
