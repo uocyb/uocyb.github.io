@@ -88,11 +88,11 @@
 
 			<div class=grid-parent>
 				<div class="grid-1">
-					<h3>Thursday · public club</h3>
+					<h3>Thursday · General Meeting</h3>
 					<p>Visualization Lab (PSC B006) · 6:00–8:00. Brief, wins, calendar, then a topic. Open room.</p>
 				</div>
 				<div class="grid-2">
-					<h3>Tuesday · competitive</h3>
+					<h3>Tuesday · Workshop</h3>
 					<p>Visualization Lab (PSC B006) · 5:30–7:00. Solve, get faster. Competitive-crew cadence.</p>
 				</div>
 				<div class="grid-3">
@@ -102,7 +102,7 @@
 			</div>
 
 			<h2>>locate cybersecurity-club</h2>
-			<p>Thursday public club meets in the Visualization Lab, Allan Price Science Commons (PSC B006), 6:00–8:00 PM. Tuesday competitive track meets in the Visualization Lab (PSC B006), 5:30–7:00 PM. Room and special-event details can shift during the year; check Discord and the calendar for changes.</p>
+			<p>Thursday General Meetings meet in the Visualization Lab, Allan Price Science Commons (PSC B006), 6:00–8:00 PM. Tuesday Workshops meet in the Visualization Lab (PSC B006), 5:30–7:00 PM. Room and special-event details can shift during the year; check Discord and the calendar for changes.</p>
 
 			<h2>>wget more-information</h2>
 			<p>If you want to join, just drop by a meeting and join the Discord! You can also reach out by messaging us
@@ -162,21 +162,32 @@
 	</article>
 
 	<!--Join button-->
-	<div onclick="window.location.href='https://discord.com/invite/wn4T3byxh4';" class="join-us">
+	<div onclick="window.open('https://discord.com/invite/wn4T3byxh4','_blank','noopener');" class="join-us">
 		Join Us!
 	</div>
 
 	<!--Script for bot-->
 	<script src="scripts/bot.js"></script>
+	<!-- Phone-only Join Us menu (shown at max-width 600px, see styles.css) -->
+	<details class="join-menu">
+		<summary>Join Us!</summary>
+		<ul>
+			<li><a href="https://discord.com/invite/wn4T3byxh4" target="_blank" rel="noopener">Discord</a></li>
+			<li><a href="https://www.instagram.com/uo_sec/" target="_blank" rel="noopener">Instagram</a></li>
+			<li><a href="https://ctf.uosec.org/challenges" target="_blank" rel="noopener">CTF Challenges</a></li>
+			<li><a href="https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/computer-science/bs-cybersecurity/" target="_blank" rel="noopener">Cyber Major</a></li>
+		</ul>
+	</details>
+	<script>document.addEventListener("click",function(e){var m=document.querySelector(".join-menu");if(m&&m.open&&!m.contains(e.target))m.open=false;});</script>
 </body>
 
 <!--- Footer (used for all pages on the website) -->
 <footer>
 	<div class="social-icons">
-		<a href="https://www.instagram.com/uo_sec/">
+		<a href="https://www.instagram.com/uo_sec/" target="_blank" rel="noopener">
 			<img class="icon-1" src="media/images/ig-icon.svg">
 		</a>
-		<a href="https://discord.com/invite/wn4T3byxh4">
+		<a href="https://discord.com/invite/wn4T3byxh4" target="_blank" rel="noopener">
 			<img class="icon-2" src="media/images/discord-icon.svg">
 		</a>
 		<a href="mailto:uosecurityclub@uoregon.edu">

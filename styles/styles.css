@@ -1234,3 +1234,179 @@ summary {
     padding: 12px;
   }
 }
+
+/* Mobile layout fixes (phones, 600px and below). Desktop rules above are unchanged. */
+@media (max-width: 600px) {
+  /* Nav: fit logo plus six links on a 375px screen */
+  nav ul {
+    flex-wrap: wrap;
+    margin: 5px 2px;
+  }
+
+  nav ul a {
+    margin: 0px 5px;
+  }
+
+  .corner-logo {
+    width: 32px;
+    margin-right: 4px;
+  }
+
+  /* Main white panel uses the phone width instead of a fixed 360px */
+  .content {
+    width: calc(100% - 16px);
+    max-width: none;
+    padding: 15px 12px 25px 12px;
+  }
+
+  p {
+    margin: 0px 8px;
+  }
+
+  /* Staff page: one card per row, images scale down */
+  .team-grid {
+    margin: 30px 0px;
+    justify-items: center;
+  }
+
+  .profile {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .profile-image {
+    width: min(230px, 70vw);
+    height: min(230px, 70vw);
+  }
+
+  /* Resources cards fill the panel */
+  .resources-1,
+  .resources-2,
+  .resources-3,
+  .resources-4,
+  .resources-5,
+  .resources-6 {
+    width: 100%;
+  }
+
+  /* Embedded Google Calendar fills the panel */
+  .calendar {
+    width: 100%;
+  }
+
+  /* JonBot chat scales with the panel */
+  .chatbot,
+  .chat,
+  #inputBox {
+    max-width: 100%;
+  }
+
+  /* Wide content scrolls inside itself instead of the page */
+  .post-content pre {
+    max-width: 100%;
+  }
+
+  .post-content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .post-content img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Phone Join Us menu: hidden on desktop. At 600px and below it replaces the
+   floating Join Us button with a round button that pops a link menu upward. */
+.join-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .join-us {
+    display: none;
+  }
+
+  /* Bottom gutter so nothing sits under the button (or the open menu)
+     when the page is scrolled to the end */
+  body {
+    height: auto;
+    padding-bottom: 84px;
+  }
+
+  body:has(.join-menu[open]) {
+    padding-bottom: 268px;
+  }
+
+  .join-menu {
+    display: block;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    z-index: 3;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    font-family: United Sans;
+  }
+
+  .join-menu summary {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #154733;
+    font-weight: bold;
+    font-size: 14px;
+    border: solid 2px #FEE123;
+    border-radius: 50%;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .join-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .join-menu[open] summary {
+    background-color: #0e3624;
+  }
+
+  .join-menu ul {
+    position: absolute;
+    right: 0;
+    bottom: 68px;
+    width: 170px;
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+    background-color: #154733;
+    border: solid 2px #FEE123;
+    border-radius: 12px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .join-menu li + li {
+    margin-top: 4px;
+  }
+
+  .join-menu a {
+    display: block;
+    padding: 9px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+
+  .join-menu a:hover {
+    background-color: #0e3624;
+    color: #FEE123;
+  }
+}
