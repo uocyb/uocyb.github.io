@@ -16,9 +16,9 @@ On Wednesday, Oct 7, OCRS brought cybersecurity companies and people together in
 
 ## More news
 
-- **High School Summit, Nov 2.** Everything you need to know is on the [conference page](https://k12cyber.uoregon.edu/conference/).
-- **[BSidesPDX 2026](https://bsidespdx.org/events/2026/register.html), Oct 23 and 24.** Members can get a carpool ride on Friday, and a hotel is provided.
+- **High School Summit, Nov 2.** Everything you need to know is on the [conference page](https://k12cyber.uoregon.edu/conference/){:target="_blank" rel="noopener"}.
+- **[BSidesPDX 2026](https://bsidespdx.org/events/2026/register.html){:target="_blank" rel="noopener"}, Oct 23 and 24.** Members can get a carpool ride on Friday, and a hotel is provided.
 
 ## Come join us
 
-Find us in [the club Discord](https://discord.com/invite/wn4T3byxh4) with questions, and keep an eye on the [calendar](https://uosec.org/calendar.html) for what's happening each week.
+Find us in [the club Discord](https://discord.com/invite/wn4T3byxh4){:target="_blank" rel="noopener"} with questions, and keep an eye on the [calendar](https://uosec.org/calendar.html){:target="_blank" rel="noopener"} for what's happening each week.
