@@ -905,6 +905,18 @@ summary {
   margin: 0 0 1em 0;
 }
 
+/* Blog photos: centered, capped width, cropped to the same 4:3 frame */
+.post-content img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+
 .post-content ul,
 .post-content ol {
   margin: 0 30px;
